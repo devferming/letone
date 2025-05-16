@@ -1,0 +1,133 @@
+.contactForm {
+  width: 40%;
+  height: auto;
+  background-color: var(--bg);
+  padding: 1.5em 1em;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactForm__x {
+  position: absolute;
+  top: 4%;
+  right: 4%;
+  transition: transform 0.3s;
+}
+
+.contactForm__x:hover {
+  cursor: pointer;
+  transform: scale(0.75);
+  color: var(--textSecondary);
+}
+
+.contactForm__h2 {
+  margin-bottom: 1.5em;
+}
+
+.contactForm__label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+  margin-bottom: 1em;
+  width: 90%;
+}
+
+.contactForm__field__name {
+  font-size: 0.9rem;
+  font-weight: var(--textlight);
+}
+
+.contactForm__field {
+  height: 2.5em;
+  border-radius: 5px;
+  border: solid 1px var(--bgSecondary);
+  padding: 0 0.5em;
+}
+
+.contactForm__btn {
+  margin-top: 1em;
+  width: 7em;
+  height: 2.5em;
+  border-radius: 20px;
+  background-color: var(--bgSecondary);
+  color: var(--text);
+  font-size: 1rem;
+  font-weight: var(--textBold);
+  padding: 0  0.5em;
+  transition:
+    background-color 0.4s,
+    transform 0.2s,
+    font-weight 0.3s;
+}
+
+.contactForm__btn:hover {
+  background-color: var(--bgOpposite);
+  color: var(--textOpposite);
+  transform: scale(1.05);
+}
+
+.contactForm__textArea {
+  border-radius: 5px;
+  padding: 0.5em;
+  border: solid 1px var(--bgSecondary);
+}
+
+.contactForm__icon__container {
+  margin-top: 1em;
+  width: 95%;
+  display: flex;
+  gap: 0.5em;
+  justify-content: flex-start;
+}
+
+.contactForm__a__icon {
+  font-size: 1.2rem;
+  color: var(--text);
+  transition: transform 0.3s;
+ }
+
+.contactForm__a__icon:hover {
+  cursor: pointer;
+  transform: scale(0.75);
+  color: var(--textSecondary);
+}
+
+.contactForm__field--required::after {
+  content: '*';
+  color: red;
+  margin-left: 0.2em;
+}
+
+.contactForm__feedback {
+  margin-top: 0.5em;
+  transition: formStatusOn 0.7s, formStatusOff 0.7s;
+  display: flex;
+  align-items: center;
+}
+
+.contactForm__feedback__icon {
+  font-size: 1.5rem;
+  margin-right: 0.2em;
+}
+
+.formStatusOn {
+  transform: scale(1);
+}
+
+.formStatusOff {
+  transform: scale(0);
+}
+
+/*********** Media Query ***********/
+
+@media (max-width:950px) {
+
+  .contactForm {
+    width: 90%;
+  }
+
+}

@@ -1,0 +1,72 @@
+{
+ "landingPages": {
+  "price": {
+   "basic": "300",
+   "pro": "600",
+   "premium": "950"
+  }
+ },
+ "onePage": {
+  "price": {
+   "basic": "400",
+   "pro": "600",
+   "premium": "950"
+  }
+ },
+ "blogs": {
+  "price": {
+   "basic": "500",
+   "pro": "800",
+   "premium": "1.000"
+  }
+ },
+ "corporate": {
+  "price": {
+   "basic": "600",
+   "pro": "800",
+   "premium": "1.200"
+  }
+ },
+ "informational": {
+  "price": {
+   "basic": "600",
+   "pro": "800",
+   "premium": "1.200"
+  }
+ },
+ "catalogs": {
+  "price": {
+   "basic": "700",
+   "pro": "1.000",
+   "premium": "1.500"
+  }
+ },
+ "applications": {
+  "price": {
+   "basic": "2.000",
+   "pro": "3.500",
+   "premium": "5.000+"
+  }
+ },
+ "intranets": {
+  "price": {
+   "basic": "2.000",
+   "pro": "3.500",
+   "premium": "5.000+"
+  }
+ },
+ "microsites": {
+  "price": {
+   "basic": "300",
+   "pro": "400",
+   "premium": "600"
+  }
+ },
+ "selfManaged": {
+  "price": {
+   "basic": "1.500",
+   "pro": "2.500",
+   "premium": "4.000+"
+  }
+ }
+}

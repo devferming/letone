@@ -1,0 +1,173 @@
+{
+  "pages": {
+    "homePage": {
+      "components": {
+        "header": {
+          "brand": {
+            "let": "let",
+            "one": "One"
+          },
+          "tagline": "Redefiniendo Límites",
+          "contact": "Contáctanos",
+          "contact_aria": "Abrir formulario de contacto",
+          "rotatingPhrases": [
+            "De la Idea al Éxito Digital",
+            "Tu Visión Hecha Realidad",
+            "Velocidad, Potencia y Escalabilidad"
+          ]
+        },
+        "philosophy": {
+          "h2": "Somos el Anti Plantilla",
+          "description": "Nada en letOne es por defecto. Cada proyecto es una obra original, construida desde la intención",
+          "iconPhrases": {
+            "lightbulb_2": "Inspiración",
+            "document_search": "Investigación ",
+            "task_alt": "Planificación",
+            "construction": "Prototipado",
+            "rocket": "Desarrollo"
+          }
+        },
+        "solutions": {
+          "h2": "Diseños con propósito",
+          "ul": {
+            "landingPages": {
+              "shortTittle": "Landing Pages",
+              "longTittle": "Landing Pages de Alto Impacto",
+              "generalDescription": "Diseñadas estratégicamente para convertir visitantes en clientes. Ideales para campañas publicitarias, lanzamientos de productos o generación de leads, con llamados a la acción claros y una experiencia enfocada en la conversión.",
+              "basic": "Página optimizada con estructura de conversión, CTA directo, diseño responsivo.",
+              "pro": "Diseño personalizado, animaciones ligeras, analítica integrada, estructura SEO lista para indexación.",
+              "premium": "Código optimizado para rendimiento, validación W3C, pruebas A/B, UX/UI avanzado, microinteracciones animadas."
+            },
+            "onePage": {
+              "shortTittle": "One Page",
+              "longTittle": "Sitios One Page Experienciales",
+              "generalDescription": "Presenta tu marca, producto o historia de forma fluida y cautivadora en una sola página. Navegación dinámica, diseño visualmente inmersivo y estructura",
+              "basic": "Sitio de una sola página con navegación fluida y diseño adaptable, desarrollado desde cero.",
+              "pro": "Interactividad avanzada (scroll dinámico, secciones animadas), código modular y limpio.",
+              "premium": "Narrativa visual completa, efectos visuales personalizados, carga optimizada y código escalable."
+            },
+            "blogs": {
+              "shortTittle": "Blogs",
+              "longTittle": "Blogs Corporativos y Profesionales",
+              "generalDescription": "Mucho más que simples artículos: plataformas enfocadas en posicionamiento SEO, generación de autoridad de marca y atracción de tráfico orgánico. Diseño limpio, estructura óptima y enfoque en contenido estratégico.",
+              "basic": "Plataforma desde cero para publicación de artículos, arquitectura modular y editable.",
+              "pro": "Sistema de categorías y etiquetas, búsqueda interna, estructura SEO avanzada.",
+              "premium": "Panel personalizado de gestión, rendimiento alto en producción, integración con analítica externa y métricas de lectura."
+            },
+            "corporate": {
+              "shortTittle": "Corporativos",
+              "longTittle": "Sitios Web Corporativos",
+              "generalDescription": "Creamos la presencia digital que tu empresa necesita: profesional, confiable y orientada a resultados. Comunica solidez institucional, fortalece tu reputación y convierte visitantes en oportunidades de negocio.",
+              "basic": "Sitio institucional de hasta 5 secciones, identidad visual alineada a la marca.",
+              "pro": "Administración de contenido vía panel personalizado, responsive, acceso seguro.",
+              "premium": "Multilenguaje, integración con sistemas de terceros, navegación avanzada y arquitectura escalable."
+            },
+            "informational": {
+              "shortTittle": "Informativos",
+              "longTittle": "Portales Informativos",
+              "generalDescription": "Soluciones claras, organizadas y escalables para comunicar grandes volúmenes de contenido. Ideal para medios, instituciones o entidades que necesitan transmitir información de forma estructurada y accesible.",
+              "basic": "Estructura organizada para grandes volúmenes de información, navegación clara.",
+              "pro": "Filtros, buscador en tiempo real, carga asincrónica, paginación dinámica.",
+              "premium": "Accesibilidad certificada, administración multiusuario, módulos reutilizables, enfoque en escalabilidad."
+            },
+            "catalogs": {
+              "shortTittle": "Catálogos",
+              "longTittle": "Catálogos Digitales Interactivos",
+              "generalDescription": "Muestra tus productos o servicios con dinamismo, filtros intuitivos y experiencia de usuario optimizada. Perfecto para marcas que quieren vender sin parecer un ecommerce... pero con el mismo poder de conversión.",
+              "basic": "Vista de productos o servicios, estructura visual atractiva, navegación fluida.",
+              "pro": "Filtros avanzados por atributos, galería interactiva, vista responsive.",
+              "premium": "Gestión de contenido vía panel, exportación de catálogo, conexión con APIs externas."
+            },
+            "applications": {
+              "shortTittle": "Aplicaciones",
+              "longTittle": "Aplicaciones Web a Medida",
+              "generalDescription": "Desarrollamos plataformas pensadas desde cero para resolver tus necesidades reales: automatizar procesos, conectar con otras herramientas o escalar tu operación. Eficiencia, control y flexibilidad en tus manos.",
+              "basic": "App con login seguro, dashboard básico, una funcionalidad principal. Desarrollo full stack desde cero.",
+              "pro": "2 a 3 módulos, base de datos personalizada, seguridad con token, autenticación de usuarios.",
+              "premium": "Arquitectura escalable, APIs propias o integradas, tests automatizados, soporte extendido."
+            },
+            "intranets": {
+              "shortTittle": "Intranets",
+              "longTittle": "Intranets Educativas o Empresariales",
+              "generalDescription": "Espacios cerrados y seguros para gestionar contenidos, usuarios y comunicación interna. Pensados para escuelas, equipos o empresas que necesitan organización, control de acceso y colaboración centralizada.",
+              "basic": "Portal cerrado con login, roles de usuario y contenido restringido.",
+              "pro": "Módulos internos (foro, calendario, tareas), carga de archivos y control de accesos.",
+              "premium": "Integración con sistemas de gestión internos, auditoría, notificaciones en tiempo real."
+            },
+            "microsites": {
+              "shortTittle": "Micrositios",
+              "longTittle": "Micrositios para Campañas Digitales",
+              "generalDescription": "Diseñados para un único objetivo: generar impacto. Ya sea lanzar un nuevo producto, impulsar un evento o captar tráfico, estos sitios pequeños son potentes, ágiles y centrados en la conversión.",
+              "basic": "Página visual enfocada en una sola acción o mensaje, desarrollo rápido y limpio.",
+              "pro": "Animaciones personalizadas, formulario con validaciones, diseño enfocado en campaña.",
+              "premium": "Conexión a base de datos, análisis en tiempo real, despliegue en múltiples entornos."
+            },
+            "selfManaged": {
+              "shortTittle": "Autoadministrables",
+              "longTittle": "Sistemas Autoadministrables",
+              "generalDescription": "Desarrollos con paneles personalizados para que gestiones tu contenido de forma simple, segura y sin conocimientos técnicos. Total autonomía, sin depender de terceros para mantener tu web al día.",
+              "basic": "Backend personalizado para editar texto, imágenes y secciones clave.",
+              "pro": "Panel robusto con múltiples roles, historial de ediciones, estructura modular.",
+              "premium": "Autonomía completa sobre el contenido, configuración de SEO, seguridad reforzada, mantenimiento incluido."
+            }
+          },
+          "imagesAlt":{
+            "solutionsImg001": "Ilustracion de un humanoide"
+          },
+          "button": "Elegir"
+        },
+        "reviews": {
+          "review1": {
+            "imgSrc": "/reviews_img1.webp",
+            "name": "Alicia Castro",
+            "position": "Rectora Centro Pedagógico La Inmaculada",
+            "comment": "Fermin es un profesional altamente comprometido y capacitado. Gracias al sistema web escolar que desarrolló para nosotros, logramos automatizar una gran parte de nuestros procesos administrativos, y reducir las cargas laborales de todo nuestro personal."
+          },
+          "review2": {
+            "imgSrc": "/reviews_img2.webp",
+            "name": "Lemis Camargo",
+            "position": "Coordinador de Simulacros ICFES",
+            "comment": "Fermín desarrolló un sistema que superó mi idea original. No solo permite realizar las pruebas en línea, sino también generar reportes con todas las estadísticas necesarias para analizar y optimizar el desempeño tanto de los estudiantes como de los docentes."
+          },
+          "review3": {
+            "imgSrc": "/reviews_img3.webp",
+            "name": "Luiggi Parra",
+            "position": "CEO AlumiWork",
+            "comment": "Fermín nos proporcionó un catálogo que recibe al cliente potencial y le brinda toda la información necesaria para realizar su compra. Gracias a esta herramienta, estamos captando de manera más efectiva la atención de nuestros clientes."
+          },
+          "review4": {
+            "imgSrc": "/reviews_img4.webp",
+            "name": "Andréa Jímenez",
+            "position": "Desarrollador Fullstack",
+            "comment": "Fermín posee unas habilidades de liderazgo y empatía que transmite seguridad al resto del equipo, es un excelente desarrollador que siemprte está dispuesto a colaborar y ayudar."
+          }
+        }
+      }
+    }
+  },
+  "shared": {
+    "contactForm": {
+      "title": "Formulario de Contácto",
+      "nameFieldLabel": "Nombre",
+      "emailFieldLabel": "Correo Electrónico",
+      "phoneFieldLabel": "Teléfono",
+      "messageFieldLabel": "Mensaje",
+      "button": "Enviar",
+      "statusMessages": {
+        "sending": "Enviando mensaje...",
+        "success": "¡Mensaje enviado exitosamente!",
+        "error": "Algo salió mal, por favor intente de nuevo"
+      }
+    },
+    "mainMenu": {
+      "sections": {
+        "header": "Inicio",
+        "philosophy": "Filosofía",
+        "solutions": "Soluciones",
+        "projects": "Proyectos",
+        "reviews": "Reseñas",
+        "contact": "Contáctame"
+      }
+    }
+  }
+}

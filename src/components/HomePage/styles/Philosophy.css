@@ -1,0 +1,99 @@
+.philosophy {
+  position: relative;
+  width: 100%;
+  padding: 0em 10em 0em 10em;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+  gap: 4em;
+  background-color: var(--bgSecondary);
+  overflow: hidden;
+  --borderAgle: 0.5em solid var(--textLogoOne);
+}
+
+.philosophy__texts {
+  width: 40vw;
+  z-index: 2;
+}
+
+.philosophy__h2 {
+  text-align: right;
+  margin-bottom: 0.2em;
+}
+
+.philosophy__p {
+  text-align: right;
+  line-height: 1.5;
+  font-size: 1.2rem;
+}
+
+.philosophy__animation {
+  height: 8em;
+  width: 8em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.3em;
+  position: relative;
+}
+
+.philosophy__animation__angle {
+  width: 50%;
+  height: 8em;
+  position: absolute;
+  background-color: transparent;
+}
+
+
+.philosophy__angle--left {
+  left: 0%;
+  border-left: var(--borderAgle);
+  border-top: var(--borderAgle);
+  border-bottom: var(--borderAgle);
+  border-right: 0;
+  border-radius: 20px 0px 0px 20px;
+}
+
+.philosophy__angle--right {
+  right: 0%;
+  border-left: 0;
+  border-top: var(--borderAgle);
+  border-bottom: var(--borderAgle);
+  border-right: var(--borderAgle);
+  border-radius: 0px 20px 20px 0px;
+}
+
+.philosophy__ico {
+  font-size: 6rem;
+}
+
+.philosophy__ico__text {
+  position: absolute;
+  bottom: -35%;
+  font-size: 1.2rem;
+  font-weight: var(--textBold);
+}
+
+.philosophy__animation__img {
+  width: 30em;
+  height: auto;
+  position: absolute;
+  bottom: -0.7%;
+  left: -7%;
+  z-index: 1;
+  /* opacity: 0.8; */
+  /* filter: grayscale(); */
+}
+
+
+/*********** Media Query ***********/
+
+@media (max-width:950px) {
+
+  .philosophy {
+    padding: 2.5em 3em 2.5em 3em;
+  }
+
+}

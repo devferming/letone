@@ -1,0 +1,88 @@
+.contact {
+  width: 100%;
+  padding: 0em 10em 0em 10em;
+  background-color: var(--bg);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact__h2 {
+  font-size: 2.3rem;
+  text-align: center;
+  margin: 0em 0 1em 0;
+}
+
+.contact__p {
+  font-size: 1.1rem;
+  text-align: center;
+  line-height: 1.5;
+  margin-bottom: 4em;
+}
+
+.contact__options {
+  display: flex;
+  gap: 2.5em;
+  justify-content: center;
+}
+
+.contact__option {
+  border-radius: 20px;
+  background-color: var(--bgSecondary);
+  width: 7em;
+  height: 7em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.4s, background-color 0.7s;
+  cursor: pointer;
+}
+
+.contact__option:hover {
+  transform: scale(1.2);
+  background-color: var(--bgOpposite);
+
+  .contact__option__span,
+  .contact__option__icon {
+    color: var(--textOpposite);
+  }
+}
+
+.contact__option__icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.15em;
+  transition: color 0.4s;
+  color: var(--text);
+}
+
+.contact__option__span {
+  font-weight: var(--mediumText);
+  transition: color 0.4s;
+  color: var(--text);
+}
+
+/*********** Media Query ***********/
+
+@media (max-width:950px) {
+
+  .contact {
+    min-height: 100vh;
+    padding: 2.5em 1.5em 2.5em 1.5em;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact__h2 {
+    margin-bottom: 0.7em;
+  }
+
+  .contact__options {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.3em;
+  }
+
+}

@@ -1,0 +1,119 @@
+.reviews {
+  width: 100%;
+  padding: 0em 10em 0em 10em;
+  background-color: var(--bgSecondary);
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 10%;
+  position: relative;
+}
+
+.reviews__h2 {
+  font-size: 2.3rem;
+  text-align: center;
+  width: 100%;
+}
+
+.reviews__container {
+  width: inherit;
+  gap: 1em;
+  display: flex;
+  justify-content: center;
+}
+
+
+.reviews__container__card {
+  width: 30em;
+  padding: 1em;
+  background-color: var(--bgReview);
+  position: relative;
+  cursor: pointer;
+}
+
+.reviews__container__card:hover {
+  animation-play-state: paused;
+}
+
+.reviews__container__icon {
+  position: absolute;
+  font-size: 6rem;
+  right: 5%;
+  top: -17%;
+  color: var(--bg);
+}
+
+.reviews__container__card__person {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 0.7em;
+}
+
+.reviews__container__card__person__img {
+  width: 6em;
+  height: 6em;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.reviews__container__card__person__h3 {
+  font-size: 1.3rem;
+  display: flex;
+}
+
+.reviews__container__card__person__span {
+  font-size: 0.8rem;
+}
+
+.reviews__container__card__p {
+  padding: 0.8em 0.5em;
+  font-size: 0.9rem;
+  text-align: right;
+  font-weight: var(--textlight);
+}
+
+@keyframes reviewFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes reviewFadeOut {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+
+
+/*********** Media Query ***********/
+
+@media (max-width:950px) {
+
+  .reviews {
+    min-height: 100vh;
+    padding: 2.5em 1.5em 2.5em 1.5em;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .reviews__h2 {
+    margin-bottom: 2em;
+  }
+
+}

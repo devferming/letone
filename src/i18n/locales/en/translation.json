@@ -1,0 +1,173 @@
+{
+  "pages": {
+    "homePage": {
+      "components": {
+        "header": {
+          "brand": {
+            "let": "let",
+            "one": "One"
+          },
+          "tagline": "Redefining Limits",
+          "contact": "Contact us",
+          "contact_aria": "Open contact form",
+          "rotatingPhrases": [
+            "From Idea to Digital Success",
+            "Your Vision Come True",
+            "Speed, Power and Scalability"
+          ]
+        },
+        "philosophy": {
+          "h2": "We are the Anti Template",
+          "description": "Nothing at letOne is by default. Each project is an original work, built from intention.",
+          "iconPhrases": {
+            "lightbulb_2": "Inspiration",
+            "document_search": "Investigation",
+            "task_alt": "Planning",
+            "construction": "Prototyping",
+            "rocket": "Development"
+          }
+        },
+        "solutions": {
+          "h2": "Designs with purpose",
+          "ul": {
+            "landingPages": {
+              "shortTittle": "Landing Pages",
+              "longTittle": "High-Impact Landing Pages",
+              "generalDescription": "Strategically designed to turn visitors into clients. Ideal for ad campaigns, product launches, or lead generation, with clear calls to action and a conversion-focused experience.",
+              "basic": "Optimized page with conversion structure, direct CTA, responsive design.",
+              "pro": "Custom design, light animations, integrated analytics, SEO-ready structure.",
+              "premium": "Performance-optimized code, W3C validation, A/B testing, advanced UX/UI, animated microinteractions."
+            },
+            "onePage": {
+              "shortTittle": "One Page",
+              "longTittle": "Experiential One Page Sites",
+              "generalDescription": "Showcase your brand, product, or story in a smooth and captivating single page. Dynamic navigation, visually immersive design, and structured layout.",
+              "basic": "Single-page site with smooth navigation and responsive design, built from scratch.",
+              "pro": "Advanced interactivity (dynamic scrolling, animated sections), modular and clean code.",
+              "premium": "Complete visual narrative, custom visual effects, optimized loading, scalable code."
+            },
+            "blogs": {
+              "shortTittle": "Blogs",
+              "longTittle": "Corporate and Professional Blogs",
+              "generalDescription": "Much more than simple articles: platforms focused on SEO positioning, brand authority generation, and organic traffic attraction. Clean design, optimal structure, and focus on strategic content.",
+              "basic": "Platform from scratch for article publishing, modular and editable architecture.",
+              "pro": "Categories and tags system, internal search, advanced SEO structure.",
+              "premium": "Custom management panel, high performance in production, integration with external analytics and reading metrics."
+            },
+            "corporate": {
+              "shortTittle": "Corporate",
+              "longTittle": "Corporate Websites",
+              "generalDescription": "We create the digital presence your company needs: professional, trustworthy, and results-driven. Communicates institutional strength, enhances your reputation, and turns visitors into business opportunities.",
+              "basic": "Institutional site with up to 5 sections, visual identity aligned to the brand.",
+              "pro": "Content management via custom panel, responsive, secure access.",
+              "premium": "Multilingual, third-party system integration, advanced navigation, and scalable architecture."
+            },
+            "informational": {
+              "shortTittle": "Informational",
+              "longTittle": "Informational Portals",
+              "generalDescription": "Clear, organized, and scalable solutions to communicate large volumes of content. Ideal for media, institutions, or entities needing to share information in a structured and accessible way.",
+              "basic": "Organized structure for large volumes of information, clear navigation.",
+              "pro": "Filters, real-time search, asynchronous loading, dynamic pagination.",
+              "premium": "Certified accessibility, multi-user management, reusable modules, scalability-focused."
+            },
+            "catalogs": {
+              "shortTittle": "Catalogs",
+              "longTittle": "Interactive Digital Catalogs",
+              "generalDescription": "Showcase your products or services dynamically, with intuitive filters and an optimized user experience. Perfect for brands wanting to sell without looking like an ecommerce... but with the same conversion power.",
+              "basic": "Product or service view, attractive visual structure, smooth navigation.",
+              "pro": "Advanced attribute filters, interactive gallery, responsive view.",
+              "premium": "Content management via panel, catalog export, connection with external APIs."
+            },
+            "applications": {
+              "shortTittle": "Applications",
+              "longTittle": "Custom Web Applications",
+              "generalDescription": "We develop platforms built from scratch to solve your real needs: automate processes, connect with other tools, or scale your operations. Efficiency, control, and flexibility in your hands.",
+              "basic": "App with secure login, basic dashboard, one main functionality. Full-stack development from scratch.",
+              "pro": "2 to 3 modules, custom database, token-based security, user authentication.",
+              "premium": "Scalable architecture, custom or integrated APIs, automated tests, extended support."
+            },
+            "intranets": {
+              "shortTittle": "Intranets",
+              "longTittle": "Educational or Business Intranets",
+              "generalDescription": "Private and secure spaces to manage content, users, and internal communication. Designed for schools, teams, or companies that need organization, access control, and centralized collaboration.",
+              "basic": "Closed portal with login, user roles, and restricted content.",
+              "pro": "Internal modules (forum, calendar, tasks), file upload, and access control.",
+              "premium": "Integration with internal management systems, auditing, real-time notifications."
+            },
+            "microsites": {
+              "shortTittle": "Microsites",
+              "longTittle": "Microsites for Digital Campaigns",
+              "generalDescription": "Designed for a single goal: create impact. Whether launching a new product, boosting an event, or capturing traffic, these small sites are powerful, agile, and focused on conversion.",
+              "basic": "Visual page focused on a single action or message, fast and clean development.",
+              "pro": "Custom animations, validated form, campaign-focused design.",
+              "premium": "Database connection, real-time analytics, multi-environment deployment."
+            },
+            "selfManaged": {
+              "shortTittle": "Self-Managed",
+              "longTittle": "Self-Managed Systems",
+              "generalDescription": "Developments with custom panels so you can manage your content simply, securely, and without technical knowledge. Total autonomy without depending on third parties to keep your site up to date.",
+              "basic": "Custom backend to edit text, images, and key sections.",
+              "pro": "Robust panel with multiple roles, edit history, modular structure.",
+              "premium": "Full content autonomy, SEO configuration, enhanced security, maintenance included."
+            }
+          },
+          "imagesAlt":{
+            "solutionsImg001": "Illustration of a humanoid"
+          },
+          "button": "Choose"
+        },
+        "reviews": {
+          "review1": {
+            "imgSrc": "/reviews_img1.webp",
+            "name": "Alicia Castro",
+            "position": "Rector of La Inmaculada Pedagogical Center",
+            "comment": "Fermin is a highly committed and trained professional. Thanks to the school web system he developed for us, we managed to automate a large part of our administrative processes, and reduce the workload of all our staff."
+          },
+          "review2": {
+            "imgSrc": "/reviews_img2.webp",
+            "name": "Lemis Camargo",
+            "position": "Pre ICFES testing coordinator",
+            "comment": "Fermín developed a system that surpassed my original idea. It not only allows you to take online tests, but also generate reports with all the necessary statistics to analyze and optimize the performance of both students and teachers."
+          },
+          "review3": {
+            "imgSrc": "/reviews_img3.webp",
+            "name": "Luiggi Parra",
+            "position": "CEO AlumiWork",
+            "comment": "Fermín gave us a catalog that receives the potential client, and gives them all the information necessary to purchase, thanks to this tool we are better capturing the attention of clients"
+          },
+          "review4": {
+            "imgSrc": "/reviews_img4.webp",
+            "name": "Andréa Jímenez",
+            "position": "Fullstack Developer",
+            "comment": "Fermín has leadership and empathy skills that transmit security to the rest of the team, he is an excellent developer who is always willing to collaborate and help."
+          }
+        }
+      }
+    }
+  },
+  "shared": {
+    "contactForm": {
+      "title": "Contact Form",
+      "nameFieldLabel": "Name",
+      "emailFieldLabel": "Email",
+      "phoneFieldLabel": "Phone",
+      "messageFieldLabel": "Message",
+      "button": "Send",
+      "statusMessages": {
+        "sending": "Sending message...",
+        "success": "Message sent successfully!",
+        "error": "Something went wrong, please try again."
+      }
+    },
+    "mainMenu": {
+      "sections": {
+        "header": "Home",
+        "philosophy": "Philosophy",
+        "solutions": "Solutions",
+        "projects": "Projects",
+        "reviews": "Reviews",
+        "contact": "Contact"
+      }
+    }
+  }
+}

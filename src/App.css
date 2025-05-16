@@ -1,0 +1,133 @@
+html {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  --textlight: 300;
+  --textMedium: 500;
+  --textBold: 700;
+}
+
+body {
+  margin: 0;
+}
+
+h1, h2, h3, h4, p, ul, hr, a {
+  margin: 0;
+}
+
+h2{
+  font-size: 3rem;
+}
+
+p{
+  font-size: 1.2rem;
+}
+
+ul{
+  padding-left: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+button, li, a {
+  cursor: pointer;
+  border: 0;
+  text-decoration: none;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.body--light {
+  --bg: #ffffff;
+  --bgSecondary: #c5c5c5;
+  --bgOpposite: #3b3b3b;
+  --bgMain: rgba(224, 224, 224, 0.95);
+  --bgReview: rgba(224, 224, 224, 0.301);
+  --text: #3b3b3b;
+  --textSecondary: #c5c5c5;
+  --textOpposite: #ffffff;
+  --textLogoLet : #3b3b3b;
+  --textLogoOne : #737373;
+}
+
+.body--dark {
+  --bg: #272727;
+  --bgSecondary: #404040;
+  --bgOpposite: #ffffff;
+  --bgMain: rgba(44, 44, 44, 0.95);
+  --bgReview: rgba(44, 44, 44, 0.342);
+  --text: #d9d9d9;
+  --textSecondary: #000000;
+  --textOpposite: #535353;
+  --textLogoLet :#d9d9d9;
+  --textLogoOne :#737373;
+}
+
+.body {
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  height: 100%;
+}
+
+/* selection */
+
+::selection {
+  background-color: var(--text);
+  color: var(--bg);
+}
+
+.contactForm__container {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.705);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s;
+  z-index: 100;
+}
+
+.form__close {
+  transform: scale(0);
+}
+
+@keyframes animateIcon {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes animateBorder {
+
+  from {
+    border-color: transparent;
+    /* Start with no border color */
+  }
+
+  to {
+    border-color: var(--bgOpposite);
+    /* Animate to the defined border color */
+  }
+}
+

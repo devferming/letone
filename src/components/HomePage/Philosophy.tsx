@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 import { AnimatePresence, motion } from "motion/react";
 import { useScrollParallax } from "../../hooks/useScrollParallaxX";
 import { useFlashingElements } from "../../hooks/useFlashingElements";
-import "./styles/philosophy.css";
+import "./styles/Philosophy.css";
 
 const Philosophy: React.FC = () => {
   const { t } = useTranslation();

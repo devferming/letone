@@ -1,5 +1,5 @@
 # Logs
-logs
+logs/
 *.log
 npm-debug.log*
 yarn-debug.log*
@@ -7,18 +7,71 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# Dependency directories
+node_modules/
+
+# Build and output directories
+dist/
+dist-ssr/
+build/
+out/
+.vite/ # Directorio de caché/construcción de Vite
+coverage/ # Reportes de cobertura de tests
+
+# Environment variables (¡MUY IMPORTANTE para la seguridad!)
+.env
+.env.local
+.env.*.local # Para archivos como .env.development.local, .env.production.local, etc.
+.env.development # Si usas archivos de entorno específicos para desarrollo
+.env.test # Si usas archivos de entorno específicos para testing
+.env.production # Si usas archivos de entorno específicos para producción
 
 # Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
-.DS_Store
+.vscode/
+!.vscode/extensions.json # Mantener este archivo para recomendar extensiones a colaboradores
+.idea/ # Directorios de IDE como IntelliJ / WebStorm
+.DS_Store # Archivos específicos de macOS
+Thumbs.db # Archivos específicos de Windows para miniaturas
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
-*.sw?
+*.sw? # Archivos swap de Vim
+*~ # Archivos temporales comunes
+*.tmp # Otros archivos temporales
+.history/ # Si usas la extensión Local History de VS Code
+.eslintcache # Archivo de caché de ESLint
+.parcel-cache/ # Directorio de caché de Parcel (si alguna vez lo usas)
+.svelte-kit/ # Salida de construcción de SvelteKit (si aplicable)
+.next/ # Salida de construcción de Next.js (si aplicable)
+.nuxt/ # Salida de construcción de Nuxt.js (si aplicable)
+
+# Testing
+/.nyc_output/
+/junit.xml
+/report.json
+
+# Thumbnails (macOS)
+.AppleDouble
+.LSOverride
+
+# Misc
+.cache/
+.npm/
+.pnpm-store/ # Caché global de pnpm (a menudo fuera del proyecto, pero buena práctica incluir)
+*.tgz
+*.zip
+*.rar
+*.7z
+
+# Archivos de certificados (si los usas localmente y no quieres que se suban)
+*.pem
+*.key
+*.crt
+
+# Claves SSH (¡MUY IMPORTANTE, si por error estuvieran aquí!)
+*.pub
+id_rsa
+id_dsa
+id_ecdsa
+id_ed25519

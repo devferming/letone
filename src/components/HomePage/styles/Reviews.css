@@ -7,26 +7,31 @@
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
-  gap: 10%;
   position: relative;
+  overflow: hidden;
 }
 
 .reviews__h2 {
-  font-size: 2.3rem;
+  font-size: 10rem;
+  filter: opacity(0.06);
   text-align: center;
   width: 100%;
 }
 
 .reviews__container {
+  position: relative;
   width: inherit;
   gap: 1em;
   display: flex;
   justify-content: center;
+  height: 40vh;
+  display: flex;
+  align-items: center;
 }
 
-
 .reviews__container__card {
-  width: 30em;
+  position: absolute;
+  width: 80%;
   padding: 1em;
   background-color: var(--bgReview);
   position: relative;
@@ -106,14 +111,14 @@
 
   .reviews {
     min-height: 100vh;
-    padding: 2.5em 1.5em 2.5em 1.5em;
+    padding: 0;
     height: auto;
     flex-direction: column;
     align-items: center;
   }
 
   .reviews__h2 {
-    margin-bottom: 2em;
+    margin-bottom: 0;
   }
 
 }

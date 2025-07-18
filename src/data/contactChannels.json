@@ -1,0 +1,12 @@
+{
+  "whatsApp": {
+    "ico": "bx bxl-whatsapp",
+    "href": "https://wa.me/+573145872733"
+  },
+  "email": { "ico": "bx bxl-gmail", "href": "#" },
+  "call": { "ico": "bx bx-phone", "href": "tel:+573145872733" },
+  "linkedIn": {
+    "ico": "bx bxl-linkedin",
+    "href": "https://www.linkedin.com/in/devferming/"
+  }
+}

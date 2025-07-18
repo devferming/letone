@@ -1,0 +1,226 @@
+.projects__article {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+
+.projects__article__div {
+  width: 60%;
+  height: 100%;
+  padding: 2em;
+}
+
+.projects__article__h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.projects__article__projectLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.projects__article__projectLink__ico {
+  border-radius: 20px;
+  background-color: var(--bgOpposite);
+  color: var(--textOpposite);
+  font-size: 1rem;
+  font-weight: var(--textBold);
+  padding: 0.3em;
+  transition: all 0.2s;
+}
+
+.projects__article__projectLink:hover {
+  opacity: 0.75;
+}
+
+.projects__article__tech {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3em;
+  margin-top: 0.5em;
+  width: 100%;
+}
+
+.projects__article__tech__img {
+  width: 1.1em;
+}
+
+.projects__article__desc__p {
+  text-align: justify;
+  font-size: 1.05rem;
+  padding: 0.7em;
+}
+
+.projects__article__desc__p--hidden {
+  display: none;
+}
+
+.projects__article__desc__btn {
+  margin-left: 0.8em;
+  font-size: 0.8rem;
+  padding: 0.3em 0.5em;
+  background-color: var(--bgSecondary);
+  border-radius: 0.5em;
+  color: var(--text);
+  font-weight: var(--textMedium);
+}
+
+.projects__article__images {
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+
+.projects__article__images__img {
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5), 0 10px 20px rgba(0, 0, 0, 0.1);
+  border: 0.3em solid var(--bgSecondary);
+}
+
+.projects__article__images__img--firts,
+.projects__article__images__img--second {
+  position: absolute;
+}
+
+.projects__article__images__img--firts {
+  width: 25em;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+}
+
+.projects__article__images__img--second {
+  width: 20em;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+}
+
+.projects__article__navigationButton {
+  position: absolute;
+  background-color: transparent;
+  width: 15em;
+  height: 15em;
+}
+
+.projects__article__navigationButton--right {
+  right: 0%;
+  bottom: 0%;
+}
+
+.projects__article__navigationButton--left {
+  left: 0%;
+  top: 0%;
+}
+
+.projects__article__navigationButton__bg {
+  position: absolute;
+  width: 15em;
+  height: 15em;
+  top: 0;
+  right: 0;
+  background-color: var(--bgSecondary);
+}
+
+.projects__article__navigationButton__bg--right {
+  clip-path: polygon(100% 0, 100% 100%, 0 100%);
+}
+
+.projects__article__navigationButton__bg--left {
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+
+}
+
+.projects__article__navigationButton--left> :last-child {
+  transform: translate(-50%, -50%) scaleX(-1);
+}
+
+.projects__article__navigationButton__ico {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 6.5rem;
+  color: var(--text);
+  transition: font-size 0.1s ease-in-out;
+}
+
+.projects__article__navigationButton__ico:hover {
+  font-size: 6.2rem;
+}
+
+/*********** Media Query ***********/
+
+@media (max-width:950px) {
+
+  .projects__article__div {
+    width: 100%;
+    height: auto;
+    padding: 0em 1.5em 0em 1.5em;
+  }
+
+  .projects__article {
+    width: 100%;
+    min-height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .projects__article__desc__p {
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.1em;
+    padding: 0.7em;
+  }
+
+  .projects__article__images {
+    width: 100%;
+    height: 10em;
+  }
+
+  .projects__article__images__img--firts {
+    width: 17em;
+    top: -40%;
+    left: 5%;
+  }
+
+  .projects__article__images__img--second {
+    width: 9em;
+    top: 15%;
+    left: 55%;
+  }
+
+  .projects__article__navigationButton--left {
+    left: 0%;
+    top: auto;
+    bottom: 0%;
+  }
+
+  .projects__article__navigationButton__bg--left {
+    clip-path: polygon(0 0, 100% 100%, 0 100%);
+  }
+
+
+  .projects__article__buttonsDiv {
+    justify-content: flex-end;
+    padding-right: 1em;
+  }
+
+  .projects__article__projectLink {
+    height: 3em;
+  }
+
+}

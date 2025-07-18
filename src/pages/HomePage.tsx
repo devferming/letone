@@ -1,38 +1,25 @@
-import Header from '../components/HomePage/Header'
-import Philosophy from '../components/HomePage/Philosophy'
-import Projects from '../components/HomePage/Projects'
-import Solutions from '../components/HomePage/Solutions'
-
-//import Technologies from '../components/HomePage/Technologies'
-//import Reviews from '../components/HomePage/Reviews'
-//import Contact from '../components/HomePage/Contact'
-
-//const HomePage = ( { currentPhrases, setToggleContactForm, currentReviews } ) => {
+import Contact from "../components/HomePage/Contact";
+import Header from "../components/HomePage/Header";
+import Philosophy from "../components/HomePage/Philosophy";
+import Projects from "../components/HomePage/Projects";
+import Reviews from "../components/HomePage/Reviews";
+import Solutions from "../components/HomePage/Solutions";
+import Footer from "../components/shared/Footer";
+import MainMenu from "../components/shared/MainMenu";
 
 const HomePage: React.FC = () => {
-
   return (
     <>
+      <MainMenu />
       <Header />
-
       <Philosophy />
       <Solutions />
       <Projects />
-      {/*      
-
-      <Technologies />
-      
-      
-      <Reviews
-        currentReviews={currentReviews}
-      />
-      <Contact
-        setToggleContactForm={setToggleContactForm}
-      />
-      */}
+      <Reviews />
+      <Contact />
+      <Footer /> 
     </>
-  )
+  );
+};
 
-}
-
-export default HomePage
+export default HomePage;

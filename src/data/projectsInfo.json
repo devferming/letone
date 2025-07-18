@@ -1,0 +1,22 @@
+{
+  "project1": {
+    "demoUrl": "https://alumiwork.shop",
+    "techUsed": ["react", "js", "css", "html"],
+    "status": "1"
+  },
+  "project2": {
+    "demoUrl": "https://cplainmaculada.edu.co",
+    "techUsed": ["php", "mysql", "js", "css", "html"],
+    "status": "1"
+  },
+  "project3": {
+    "demoUrl": "https://enso.edu.co/ensosaber/",
+    "techUsed": ["php", "mysql", "js", "css", "html"],
+    "status": "1"
+  },
+    "project4": {
+    "demoUrl": "http://juntosencadapaso.org/",
+    "techUsed": ["react", "js", "css", "html"],
+    "status": "2"
+  }
+}

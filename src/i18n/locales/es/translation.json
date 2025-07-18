@@ -17,7 +17,7 @@
           ]
         },
         "philosophy": {
-          "h2": "Somos el Anti Plantilla",
+          "h2": "Somos el Anti Template",
           "description": "Nada en letOne es por defecto. Cada proyecto es una obra original, construida desde la intención",
           "iconPhrases": {
             "lightbulb_2": "Inspiración",
@@ -28,7 +28,7 @@
           }
         },
         "solutions": {
-          "h2": "Diseños con propósito",
+          "h2": "Soluciones",
           "ul": {
             "landingPages": {
               "shortTittle": "Landing Pages",
@@ -111,10 +111,50 @@
               "premium": "Autonomía completa sobre el contenido, configuración de SEO, seguridad reforzada, mantenimiento incluido."
             }
           },
-          "imagesAlt":{
+          "imagesAlt": {
             "solutionsImg001": "Ilustracion de un humanoide"
           },
           "button": "Elegir"
+        },
+        "projects": {
+          "h2": "Proyectos",
+          "projectsObj": {
+            "project1": {
+              "name": "Catálogo Virtual",
+              "p1": "Un emprendimiento buscaba una forma elegante y funcional de presentar su catálogo de productos en línea. Querían una herramienta que facilitara la navegación y permitiera conectar con sus clientes de manera directa.",
+              "p2": "Tomando esa necesidad como punto de partida, dimos vida a un catálogo virtual dinámico desarrollado con React. Implementamos filtros inteligentes por categorías y subcategorías, junto a una interfaz clara y responsiva que guía al usuario de forma natural.",
+              "p3": "El resultado fue una plataforma moderna y eficiente, pensada para convertir visitantes en oportunidades reales. Esta solución impulsa la comunicación directa con clientes potenciales, elevando la experiencia digital de la marca a un nuevo nivel.",
+              "status": { "e1": "in production", "e2": "in development" }
+            },
+            "project2": {
+              "name": "Sistema Escolar",
+              "p1": "Una institución educativa necesitaba una solución integral para modernizar la gestión académica. Buscaban automatizar procesos como la carga de notas, la generación de boletines y el acceso diferenciado según el rol del usuario, para mejorar la eficiencia y la comunicación interna.",
+              "p2": "Con base en estos requerimientos, diseñamos una plataforma fullstack personalizada usando PHP y MySQL. El sistema permite administrar aulas virtuales, emitir informes académicos y organizar contenidos de forma clara, todo bajo una interfaz intuitiva adaptada a cada nivel de acceso.",
+              "p3": "El resultado fue un entorno digital robusto y funcional que logró automatizar cerca del 80% de las tareas administrativas. Esta solución optimiza tiempos, mejora la trazabilidad de datos y fortalece el vínculo entre docentes, estudiantes y el equipo directivo en un espacio centralizado.",
+              "status": { "e1": "in production", "e2": "in development" }
+            },
+            "project3": {
+              "name": "Simulacros ICFES",
+              "p1": "La Escuela Normal Superior de Ocaña buscaba una solución digital que facilitara la preparación de sus estudiantes para las pruebas ICFES. Requerían una plataforma accesible que permitiera realizar simulacros de manera online y generar reportes útiles para docentes y directivos.",
+              "p2": "A partir de esta necesidad, desarrollamos un sistema fullstack robusto basado en PHP y MySQL. La herramienta permite aplicar simulacros personalizados, analizar resultados al instante y ofrecer estadísticas detalladas que apoyan el seguimiento pedagógico en tiempo real.",
+              "p3": "El impacto fue inmediato: los docentes acceden a datos precisos sobre desempeño por área y estudiante, mientras que los alumnos practican en un entorno realista. La plataforma fortalece la preparación académica y mejora la toma de decisiones educativas estratégicas.",
+              "status": { "e1": "in production", "e2": "in development" }
+            },
+            "project4": {
+              "name": "Fundación Juntos en Cada Paso",
+              "p1": "La Fundación Juntos en Cada Paso necesitaba una plataforma digital que visibilizara sus actividades y permitiera conectarse con personas dispuestas a apoyar su causa. Querían un sitio web claro, accesible y que reflejara su compromiso social.",
+              "p2": "Diseñamos una solución fullstack con Laravel que combina un sitio informativo dinámico con un sistema de donaciones en línea. Integramos una pasarela de pagos segura para facilitar el recaudo, junto con una administración sencilla de contenidos para mantener todo actualizado.",
+              "p3": "El resultado fue una herramienta que impulsa la misión de la fundación: ahora pueden difundir su labor, recibir aportes de forma eficiente y fortalecer su presencia en el entorno digital. Todo con una experiencia fluida, confiable y alineada con sus valores.",
+              "status": { "e1": "in production", "e2": "in development" }
+            }
+          },
+          "alt": "Captura del proyecto",
+          "navigateBtnRight": "Ver proyecto siguiente",
+          "navigateBtnLeft": "Ver proyecto anterior",
+          "readMoreBtnText": {
+            "read" : "Leer menos",
+            "noRead": "Leer más"
+          }
         },
         "reviews": {
           "review1": {
@@ -141,7 +181,139 @@
             "position": "Desarrollador Fullstack",
             "comment": "Fermín posee unas habilidades de liderazgo y empatía que transmite seguridad al resto del equipo, es un excelente desarrollador que siemprte está dispuesto a colaborar y ayudar."
           }
+        },
+        "contact": {
+          "h2": "Contácto",
+          "p": "Estamos disponible a través de múltiples canales",
+          "channels": {
+            "whatsApp": "WhatsApp",
+            "call": "Llamada",
+            "email": "Correo",
+            "linkedIn": "LinkedIn"
+          }
         }
+      }
+    },
+    "legal": {
+      "privacyPolicy": {
+        "title": "Política de Privacidad",
+        "lastUpdated": "Última actualización: 1 de julio de 2025",
+        "intro": "En LetOne, con sede en Bogotá, Colombia, nos comprometemos a proteger la privacidad de nuestros usuarios, clientes y visitantes...",
+        "consent": "Al usar este sitio o nuestros servicios, aceptas las prácticas descritas en esta política.",
+        "responsibleTitle": "Responsable del tratamiento",
+        "responsibleBody": "LetOne - Bogotá D.C., Colombia - contacto@letone.com",
+        "dataTitle": "Información que recopilamos",
+        "dataList": [
+          "Datos de contacto: nombre, correo electrónico, teléfono.",
+          "Datos técnicos: dirección IP, navegador, sistema operativo.",
+          "Datos voluntarios: ingresados en formularios o solicitudes."
+        ],
+        "purposeTitle": "Finalidad del uso de datos",
+        "purposeList": [
+          "Ofrecer servicios de desarrollo web y apps.",
+          "Responder a solicitudes o consultas.",
+          "Mejorar nuestros servicios y experiencia de usuario.",
+          "Enviar información de marketing (con consentimiento).",
+          "Cumplir obligaciones legales."
+        ],
+        "rightsTitle": "Tus derechos",
+        "rightsList": [
+          "Acceder, corregir o actualizar tus datos.",
+          "Solicitar prueba de autorización.",
+          "Ser informado sobre el uso de tus datos.",
+          "Retirar el consentimiento y solicitar eliminación.",
+          "Acceder gratuitamente a tu información personal."
+        ],
+        "storageTitle": "Conservación de datos",
+        "storage": "Tus datos se conservarán el tiempo necesario para fines legales y contractuales.",
+        "securityTitle": "Seguridad de la información",
+        "security": "Aplicamos medidas técnicas y organizativas para proteger tus datos personales.",
+        "transferTitle": "Transferencia de datos",
+        "transfer": "No vendemos tus datos. Solo los compartimos cuando es necesario o por obligación legal.",
+        "cookiesTitle": "Uso de cookies",
+        "cookies": "Utilizamos cookies para mejorar tu experiencia. Puedes desactivarlas en tu navegador.",
+        "changesTitle": "Modificaciones",
+        "changes": "Nos reservamos el derecho de actualizar esta política. Revisa esta página regularmente.",
+        "contactTitle": "Contacto",
+        "contact": "Para dudas o consultas, escríbenos a contacto@letone.com"
+      },
+
+      "termsOfUse": {
+        "title": "Aviso Legal y Términos de Uso",
+        "lastUpdated": "Última actualización: 1 de julio de 2025",
+        "intro": "Al navegar en este sitio web estás aceptando los siguientes términos de uso.",
+        "responsibleTitle": "Datos del responsable",
+        "responsibleBody": "LetOne - Bogotá, Colombia - contacto@letone.com",
+        "dataTitle": "Finalidad del sitio web",
+        "dataList": [
+          "Brindar información sobre desarrollo web y aplicaciones.",
+          "Proveer contacto comercial y soporte.",
+          "Mostrar portafolio de proyectos y experiencia profesional."
+        ],
+        "purposeTitle": "Uso permitido",
+        "purposeList": [
+          "Navegar, contactar y solicitar información.",
+          "Consultar servicios y proyectos ofrecidos.",
+          "Compartir contenidos respetando los derechos de autor."
+        ],
+        "rightsTitle": "Obligaciones del usuario",
+        "rightsList": [
+          "No realizar actividades ilícitas o perjudiciales.",
+          "No transmitir virus o software malicioso.",
+          "No vulnerar los derechos de terceros ni de LetOne."
+        ],
+        "storageTitle": "Propiedad intelectual",
+        "storage": "Todos los contenidos pertenecen a LetOne, salvo los expresamente atribuidos a terceros.",
+        "securityTitle": "Responsabilidad",
+        "security": "LetOne no se hace responsable de daños derivados del mal uso del sitio web.",
+        "transferTitle": "Acceso a enlaces externos",
+        "transfer": "Podemos incluir enlaces a terceros, pero no nos hacemos responsables por sus políticas o contenidos.",
+        "cookiesTitle": "Jurisdicción",
+        "cookies": "Este aviso legal se rige por las leyes colombianas.",
+        "changesTitle": "Modificaciones",
+        "changes": "LetOne puede modificar estos términos sin previo aviso. Revisa esta sección regularmente.",
+        "contactTitle": "Contacto",
+        "contact": "Cualquier consulta sobre estos términos debe enviarse a contacto@letone.com"
+      },
+
+      "cookiesPolicy": {
+        "title": "Política de Cookies",
+        "lastUpdated": "Última actualización: 1 de julio de 2025",
+        "intro": "Este sitio utiliza cookies propias y de terceros para mejorar tu experiencia de navegación.",
+        "consent": "Al continuar navegando, aceptas el uso de cookies según esta política.",
+        "responsibleTitle": "¿Qué son las cookies?",
+        "responsibleBody": "Son pequeños archivos de texto que los sitios web instalan en tu navegador para recordar tus preferencias y actividad.",
+        "dataTitle": "Cookies que usamos",
+        "dataList": [
+          "Cookies técnicas: esenciales para el funcionamiento del sitio.",
+          "Cookies de análisis: recogen estadísticas anónimas de uso.",
+          "Cookies de terceros: integraciones como YouTube, Google Analytics, etc."
+        ],
+        "purposeTitle": "Finalidades",
+        "purposeList": [
+          "Garantizar el funcionamiento técnico de la web.",
+          "Guardar tus preferencias de navegación.",
+          "Medir y analizar el comportamiento de los usuarios.",
+          "Facilitar el uso compartido en redes sociales."
+        ],
+        "rightsTitle": "Cómo desactivarlas",
+        "rightsList": [
+          "Puedes configurar tu navegador para bloquear o eliminar cookies.",
+          "Consulta la ayuda de tu navegador para cambiar la configuración.",
+          "Ten en cuenta que algunas funcionalidades pueden no funcionar sin cookies."
+        ],
+        "storageTitle": "Consentimiento y control",
+        "storage": "Puedes retirar tu consentimiento en cualquier momento configurando tu navegador.",
+        "securityTitle": "Cambios en la política",
+        "security": "Nos reservamos el derecho de actualizar esta política sin previo aviso.",
+        "transferTitle": "Terceros",
+        "transfer": "Algunas cookies pueden ser gestionadas por servicios externos integrados.",
+        "cookiesTitle": "Responsabilidad del usuario",
+        "cookies": "Es responsabilidad del usuario consultar periódicamente esta política.",
+        "changesTitle": "Actualizaciones",
+        "changes": "Última modificación: julio 1, 2025",
+        "contactTitle": "Contacto",
+        "contact": "Para más información, escríbenos a contacto@letone.com"
       }
     }
   },
@@ -167,6 +339,43 @@
         "projects": "Proyectos",
         "reviews": "Reseñas",
         "contact": "Contáctame"
+      }
+    },
+    "footer": {
+      "resources": {
+        "h3": "Recursos",
+        "p1": "Blog de programación",
+        "p2": "Productos gratuitos"
+      },
+      "socialWork": {
+        "h3": "Trabajo Social",
+        "p1": "Seminario anti Grooming",
+        "p2": "Juntos en Cada Paso"
+      },
+      "contact": {
+        "h3": "¿Hablamos?",
+        "p": "Escribenos por Whatsapp",
+        "a": {
+          "href": "https://wa.me/573145872733?text=Buenos%20d%C3%ADas%2C%20estoy%20interesado(a)%20en%20obtener%20m%C3%A1s%20detalles%20sobre%20los%20servicios%20que%20ofrecen.%20Agradezco%20su%20atenci%C3%B3n.",
+          "ariaLabel": "Contactar vía WhatsApp"
+        }
+      },
+      "legal": {
+        "ariaLabel": "Políticas del sitio",
+        "year": "letOne · Todos los derechos reservados.",
+
+        "privacyPolicy": {
+          "text": "Política de Privacidad",
+          "ariaLabel": "Lea nuestra Política de Privacidad"
+        },
+        "cookiesPolicy": {
+          "text": "Política de Cookies",
+          "ariaLabel": "Lea nuestra Política de Cookies"
+        },
+        "termsOfUse": {
+          "text": "Aviso Legal",
+          "ariaLabel": "Lea nuestro Aviso Legal"
+        }
       }
     }
   }

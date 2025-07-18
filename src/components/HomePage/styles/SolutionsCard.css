@@ -1,0 +1,195 @@
+.solutions__article__div__wrapper {
+  perspective: 1200px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  width: 60%;
+}
+
+.solutions__article__div__card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.solutions__article__div__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-color: var(--bg);
+  box-shadow:
+    0 25px 50px -12px rgba(0, 0, 0, 0.5),
+    0 10px 20px rgba(0, 0, 0, 0.1);
+  padding: 1em 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.solutions__article__div__face__h3 {
+  font-size: 1.rem;
+  text-align: center;
+}
+
+.solutions__article__div__face__p {
+  text-align: center;
+  font-size: 1.05rem;
+}
+
+.solutions__article__div__face__pricesCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.3em;
+  height: 100%;
+  max-height: 60%;
+  width: 100%;
+}
+
+.solutions__article__div__face__pricesCard__li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px var(--bgSecondary);
+  border-radius: 10px;
+  border-width: 2px;
+  height: 90%;
+  width: 30%;
+  padding: 0.5em;
+  cursor: default;
+}
+
+.solutions__article__div__face__pricesCard__h4 {
+  text-align: center;
+  color: var(--textLogoOne);
+}
+
+.solutions__article__div__face__pricesCard__p {
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.solutions__article__div__face__pricesCard__div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+}
+
+.solutions__article__div__face__pricesCard__div__price {
+  font-size: 1rem;
+  font-weight: var(--textBold);
+}
+
+.solutions__article__div__face__pricesCard__div__currency {
+  font-size: 0.7rem;
+  font-weight: var(--textBold);
+}
+
+.solutions__article__div__face__pricesCard__btn {
+  width: 4em;
+  height: 1.7em;
+  border-radius: 5px;
+  margin: 0.9em 0 0.9em 0;
+  background-color: var(--bgSecondary);
+  color: var(--text);
+  text-align: center;
+  font-weight: var(--textBold);
+  transition: all 0.2s;
+}
+
+.solutions__article__div__face__pricesCard__btn:hover {
+  opacity: 0.75;
+}
+
+.priceCard--liPro {
+  border-color: var(--bgOpposite);
+}
+
+.priceCard--h4Pro {
+  color: var(--text);
+}
+
+.priceCard--btnPro {
+  background-color: var(--bgOpposite);
+  color: var(--textOpposite);
+}
+
+.solutions__article__div__face__pricesCard__p {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+  line-height: 1.05em;
+}
+
+.solutions__article__div__back {
+  transform: rotateY(180deg);
+}
+
+/*********** Media Query ***********/
+
+
+@media (max-width:950px) {
+
+  .solutions__article__div__wrapper {
+    width: 95%;
+    height: auto;
+
+  }
+
+  .solutions__article__div__face__p {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .solutions__article__div__face__pricesCard {
+    gap: 0.5em;
+  }
+
+  .solutions__article__div__face__pricesCard__li {
+    padding: 0.5;
+    min-height: 15em;
+
+  }
+
+  .solutions__article__div__face {
+    height: auto;
+    padding: 2em 0.6em;
+    gap: 0.5em;
+  }
+
+  .solutions__article__div__face__pricesCard__p {
+    font-size: 0.8rem;
+    line-height: 1em;
+  }
+
+  .solutions__article__div__face__pricesCard__div {
+    width: auto;
+  }
+
+  .solutions__article__div__face__pricesCard__p {
+    width: auto;
+    height: auto;
+    display: block;
+  }
+
+  .solutions__article__div__face__pricesCard__div__price {
+    font-size: 0.7rem;
+  }
+
+  .solutions__article__div__card {
+    height: 27em;
+  }
+
+}

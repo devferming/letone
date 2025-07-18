@@ -1,43 +1,54 @@
-import { useTranslation } from 'react-i18next'
+import { useTranslation } from "react-i18next"
 import { AnimatePresence, motion } from "motion/react"
-import { useAppDispatch } from '../../hooks/useAppDispatch'
-import { openForm } from '../../features/contactForm/contactFormSlice'
-import './styles/Header.css'
-import { useFlashingElements } from '../../hooks/useFlashingElements'
+import { useAppDispatch } from "../../hooks/useAppDispatch"
+import { openForm } from "../../features/contactForm/contactFormSlice"
+import { useFlashingElements } from "../../hooks/useFlashingElements"
+import "./styles/Header.css"
 
 const Header: React.FC = () => {
-
   const dispatch = useAppDispatch()
   const { t } = useTranslation()
 
-  const phrases = t('pages.homePage.components.header.rotatingPhrases', { returnObjects: true }) as string[]
-  const { currentElement: currentPhrase, crrIdxElement: currentIndex } = useFlashingElements(4000, phrases)
+  const phrases = t("pages.homePage.components.header.rotatingPhrases", {
+    returnObjects: true,
+  })
+
+  const isArray = Array.isArray(phrases)
+
+  const { currentElement: currentPhrase, crrIdxElement: currentIndex } =
+    useFlashingElements(4000, isArray ? (phrases as string[]) : [])
 
   return (
-    <header className='header' id='header'>
-
-      <div className='header__div'>
-        <h1 className='header__h1'>
-          <span className='header__h1--span1'>{t('pages.homePage.components.header.brand.let')}</span>
-          <span className='header__h1--span2'>{t('pages.homePage.components.header.brand.one')}</span>
+    <header className="header" id="header">
+      <div className="header__div">
+        <h1 className="header__h1">
+          <span className="header__h1--span1">
+            {t("pages.homePage.components.header.brand.let")}
+          </span>
+          <span className="header__h1--span2">
+            {t("pages.homePage.components.header.brand.one")}
+          </span>
         </h1>
-        <h2 className='header__h2'>{t('pages.homePage.components.header.tagline')}</h2>
-        <div className='header__buttons'>
+        <h2 className="header__h2">
+          {t("pages.homePage.components.header.tagline")}
+        </h2>
+        <div className="header__buttons">
           <button
             type="button"
-            aria-label={t('pages.homePage.components.header.contact_aria')}
+            aria-label={t("pages.homePage.components.header.contact_aria")}
             onClick={() => dispatch(openForm())}
-            className='header__button header__button--firts'>
-            {t('pages.homePage.components.header.contact')}
+            className="header__button header__button--firts"
+          >
+            {t("pages.homePage.components.header.contact")}
           </button>
         </div>
       </div>
 
-      <div className='header__msg__container' role="status" aria-live="polite">
-        <AnimatePresence mode='wait'>
+      <div className="header__msg__container" role="status" aria-live="polite">
+        <AnimatePresence mode="wait">
           <motion.h3
             key={currentIndex}
-            className='header__msg'
+            className="header__msg"
             initial={{ opacity: 0, y: -10, scale: 0.98 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 10, scale: 0.98 }}
@@ -47,8 +58,6 @@ const Header: React.FC = () => {
           </motion.h3>
         </AnimatePresence>
       </div>
-
-
     </header>
   )
 }

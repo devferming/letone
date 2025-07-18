@@ -30,7 +30,7 @@
   display: flex;
   gap: 1em;
   align-items: center;
-  padding: 0  0.5em;
+  padding: 0 0.5em;
 }
 
 .mainMenu__ul {
@@ -39,24 +39,23 @@
   gap: 0em;
   align-items: center;
   justify-content: flex-end;
-  padding: 0  0.5em;
+  padding: 0 0.5em;
 }
 
 .mainMenu__btn {
   background-color: transparent;
   color: var(--text);
+  transition: color 0.38s ease;
   display: flex;
   align-items: center;
   font-size: 0.9rem;
   font-weight: var(--textMedium);
   height: 100%;
   padding: 0 0.9em;
-  transition: color 0.2s, transform 0.2s;
 }
 
 .mainMenu__btn:hover {
-  color: var(--textOpposite);
-  transform: scale(0.97);
+  color: var(--textLogoOne);
 }
 
 .mainMenu__control_btn {
@@ -118,7 +117,7 @@
   flex-direction: column;
   align-items: center;
   height: 100vh;
-  width: 100%;
+  width: 10%;
   position: fixed;
   z-index: 100;
   background-color: var(--bgMain);
@@ -179,7 +178,7 @@
 
 /*********** Media Query ***********/
 
-@media (max-width:950px)  {
+@media (max-width:950px) {
   .mainMenu {
     transform: scale(0);
   }

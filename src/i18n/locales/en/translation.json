@@ -28,7 +28,7 @@
           }
         },
         "solutions": {
-          "h2": "Designs with purpose",
+          "h2": "Solutions",
           "ul": {
             "landingPages": {
               "shortTittle": "Landing Pages",
@@ -111,10 +111,47 @@
               "premium": "Full content autonomy, SEO configuration, enhanced security, maintenance included."
             }
           },
-          "imagesAlt":{
+          "imagesAlt": {
             "solutionsImg001": "Illustration of a humanoid"
           },
           "button": "Choose"
+        },
+        "projects": {
+          "h2": "Projects",
+          "projectsObj": {
+            "project1": {
+              "name": "Virtual Catalog",
+              "p1": "An entrepreneurial venture sought an elegant and functional way to showcase its product catalog online. They needed a tool that would facilitate navigation and allow direct connection with their customers.",
+              "p2": "Based on this need, we created a dynamic virtual catalog developed with React. We implemented smart filters by categories and subcategories, along with a clear and responsive interface that guides the user naturally.",
+              "p3": "The result was a modern and efficient platform designed to turn visitors into real opportunities. This solution fosters direct communication with potential clients, elevating the brand's digital experience to a new level."
+            },
+            "project2": {
+              "name": "School System",
+              "p1": "An educational institution needed a comprehensive solution to modernize academic management. They sought to automate processes such as grade submission, report card generation, and differentiated access based on user roles to improve efficiency and internal communication.",
+              "p2": "Based on these requirements, we designed a custom fullstack platform using PHP and MySQL. The system allows virtual classroom management, academic report generation, and organized content delivery, all through an intuitive interface tailored to each access level.",
+              "p3": "The result was a robust and functional digital environment that automated nearly 80% of administrative tasks. This solution optimizes time, improves data traceability, and strengthens the connection between teachers, students, and the leadership team in a centralized space."
+            },
+            "project3": {
+              "name": "ICFES Simulations",
+              "p1": "The Escuela Normal Superior de Ocaña was looking for a digital solution to help students prepare for the ICFES exams. They needed an accessible platform for conducting online simulations and generating useful reports for teachers and administrators.",
+              "p2": "From this need, we developed a robust fullstack system based on PHP and MySQL. The tool allows for personalized simulations, instant result analysis, and detailed statistics to support real-time pedagogical tracking.",
+              "p3": "The impact was immediate: teachers accessed precise performance data by subject and student, while learners practiced in a realistic environment. The platform strengthens academic preparation and enhances strategic educational decision-making."
+            },
+            "project4": {
+              "name": "Juntos en Cada Paso Foundation",
+              "p1": "The Juntos en Cada Paso Foundation needed a digital platform to showcase its activities and connect with people willing to support its cause. They wanted a clear, accessible website that reflected their social commitment.",
+              "p2": "We designed a fullstack solution using Laravel that combines a dynamic informational site with an online donation system. We integrated a secure payment gateway to facilitate contributions, along with simple content management to keep everything up to date.",
+              "p3": "The result was a tool that drives the foundation’s mission: they can now share their work, receive contributions efficiently, and strengthen their digital presence. All with a smooth, reliable experience aligned with their core values.",
+              "status": { "e1": "in production", "e2": "in development" }
+            }
+          },
+          "alt": "Project capture",
+          "navigateBtnRight": "See next project",
+          "navigateBtnLeft": "See previous project",
+          "readMoreBtnText": {
+            "read" : "Read less",
+            "noRead": "Read more"
+          }
         },
         "reviews": {
           "review1": {
@@ -141,7 +178,137 @@
             "position": "Fullstack Developer",
             "comment": "Fermín has leadership and empathy skills that transmit security to the rest of the team, he is an excellent developer who is always willing to collaborate and help."
           }
+        },
+        "contact": {
+          "h2": "Contact",
+          "p": "We are available through multiple channels",
+          "channels": {
+            "whatsApp": "WhatsApp",
+            "call": "Call",
+            "email": "Email",
+            "linkedIn": "LinkedIn"
+          }
         }
+      }
+    },
+    "legal": {
+      "privacyPolicy": {
+        "title": "Privacy Policy",
+        "lastUpdated": "Last updated: July 1, 2025",
+        "intro": "At LetOne, based in Bogotá, Colombia, we are committed to protecting the privacy of our users, clients, and visitors...",
+        "consent": "By using this site or our services, you agree to the practices described in this policy.",
+        "responsibleTitle": "Data Controller",
+        "responsibleBody": "LetOne - Bogotá D.C., Colombia - contacto@letone.com",
+        "dataTitle": "Information We Collect",
+        "dataList": [
+          "Contact data: name, email, phone number.",
+          "Technical data: IP address, browser, operating system.",
+          "Voluntary data: provided via forms or inquiries."
+        ],
+        "purposeTitle": "Purpose of Data Use",
+        "purposeList": [
+          "To provide web and app development services.",
+          "To respond to requests or inquiries.",
+          "To improve our services and user experience.",
+          "To send marketing information (with consent).",
+          "To comply with legal obligations."
+        ],
+        "rightsTitle": "Your Rights",
+        "rightsList": [
+          "Access, correct, or update your data.",
+          "Request proof of authorization.",
+          "Be informed about how your data is used.",
+          "Withdraw consent and request deletion.",
+          "Access your personal information free of charge."
+        ],
+        "storageTitle": "Data Retention",
+        "storage": "We retain your data for the time necessary to fulfill legal and contractual purposes.",
+        "securityTitle": "Information Security",
+        "security": "We apply technical and organizational measures to protect your personal data.",
+        "transferTitle": "Data Sharing",
+        "transfer": "We do not sell your data. We only share it when necessary or legally required.",
+        "cookiesTitle": "Use of Cookies",
+        "cookies": "We use cookies to enhance your experience. You may disable them in your browser settings.",
+        "changesTitle": "Changes",
+        "changes": "We may update this policy at any time. Please check this page regularly.",
+        "contactTitle": "Contact",
+        "contact": "For questions or inquiries, write to contacto@letone.com"
+      },
+      "termsOfUse": {
+        "title": "Legal Notice and Terms of Use",
+        "lastUpdated": "Last updated: July 1, 2025",
+        "intro": "By browsing this website, you accept the following terms of use.",
+        "responsibleTitle": "Responsible Entity",
+        "responsibleBody": "LetOne - Bogotá, Colombia - contacto@letone.com",
+        "dataTitle": "Purpose of the Website",
+        "dataList": [
+          "Provide information about web and app development.",
+          "Offer commercial contact and support.",
+          "Showcase portfolio and professional experience."
+        ],
+        "purposeTitle": "Permitted Use",
+        "purposeList": [
+          "Browse, contact, and request information.",
+          "Consult offered services and projects.",
+          "Share content respecting copyright."
+        ],
+        "rightsTitle": "User Obligations",
+        "rightsList": [
+          "Do not perform unlawful or harmful activities.",
+          "Do not transmit viruses or malicious software.",
+          "Do not infringe third-party or LetOne rights."
+        ],
+        "storageTitle": "Intellectual Property",
+        "storage": "All content belongs to LetOne unless explicitly attributed to third parties.",
+        "securityTitle": "Liability",
+        "security": "LetOne is not liable for damages arising from misuse of the website.",
+        "transferTitle": "Third-Party Links",
+        "transfer": "We may include third-party links but are not responsible for their content or policies.",
+        "cookiesTitle": "Jurisdiction",
+        "cookies": "This legal notice is governed by the laws of Colombia.",
+        "changesTitle": "Modifications",
+        "changes": "LetOne may modify these terms without prior notice. Please review them regularly.",
+        "contactTitle": "Contact",
+        "contact": "Any inquiries regarding these terms should be sent to contacto@letone.com"
+      },
+      "cookiesPolicy": {
+        "title": "Cookies Policy",
+        "lastUpdated": "Last updated: July 1, 2025",
+        "intro": "This site uses first- and third-party cookies to improve your browsing experience.",
+        "consent": "By continuing to browse, you agree to the use of cookies according to this policy.",
+        "responsibleTitle": "What Are Cookies?",
+        "responsibleBody": "Cookies are small text files stored by websites in your browser to remember preferences and activity.",
+        "dataTitle": "Cookies We Use",
+        "dataList": [
+          "Technical cookies: essential for the site to function.",
+          "Analytics cookies: collect anonymous usage statistics.",
+          "Third-party cookies: integrations such as YouTube, Google Analytics, etc."
+        ],
+        "purposeTitle": "Purposes",
+        "purposeList": [
+          "Ensure technical functionality of the site.",
+          "Save your browsing preferences.",
+          "Measure and analyze user behavior.",
+          "Enable sharing on social networks."
+        ],
+        "rightsTitle": "How to Disable Them",
+        "rightsList": [
+          "You can configure your browser to block or delete cookies.",
+          "Check your browser help section for instructions.",
+          "Some features may not work without cookies."
+        ],
+        "storageTitle": "Consent and Control",
+        "storage": "You can withdraw your consent at any time through your browser settings.",
+        "securityTitle": "Changes to the Policy",
+        "security": "We reserve the right to update this policy without notice.",
+        "transferTitle": "Third Parties",
+        "transfer": "Some cookies may be managed by integrated external services.",
+        "cookiesTitle": "User Responsibility",
+        "cookies": "It is the user's responsibility to periodically review this policy.",
+        "changesTitle": "Updates",
+        "changes": "Last modification: July 1, 2025",
+        "contactTitle": "Contact",
+        "contact": "For more information, write to contacto@letone.com"
       }
     }
   },
@@ -167,6 +334,42 @@
         "projects": "Projects",
         "reviews": "Reviews",
         "contact": "Contact"
+      }
+    },
+    "footer": {
+      "resources": {
+        "h3": "Resources",
+        "p1": "Programming blog",
+        "p2": "Free products"
+      },
+      "socialWork": {
+        "h3": "Social Work",
+        "p1": "Anti-Grooming Seminar",
+        "p2": "Juntos en Cada Paso Foundation"
+      },
+      "contact": {
+        "h3": "Shall we talk?",
+        "p": "Write to us on WhatsApp",
+        "a": {
+          "href": "https://wa.me/573145872733?text=Good%20morning%2C%20I%E2%80%99m%20interested%20in%20getting%20more%20information%20about%20the%20services%20you%20offer.%20I%20appreciate%20your%20attention.",
+          "ariaLabel": "Contact via WhatsApp"
+        }
+      },
+      "legal": {
+        "ariaLabel": "Site policies",
+        "year": "letOne · All rights reserved.",
+        "privacyPolicy": {
+          "text": "Privacy Policy",
+          "ariaLabel": "Read our Privacy Policy"
+        },
+        "cookiesPolicy": {
+          "text": "Cookie Policy",
+          "ariaLabel": "Read our Cookie Policy"
+        },
+        "termsOfUse": {
+          "text": "Legal Notice",
+          "ariaLabel": "Read our Legal Notice"
+        }
       }
     }
   }

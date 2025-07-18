@@ -6,12 +6,14 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow: hidden;
 }
 
 .contact__h2 {
-  font-size: 2.3rem;
+  font-size: 10rem;
+  filter: opacity(0.06);
   text-align: center;
-  margin: 0em 0 1em 0;
+  margin: 0;
 }
 
 .contact__p {
@@ -76,7 +78,7 @@
   }
 
   .contact__h2 {
-    margin-bottom: 0.7em;
+    margin-bottom: 0;
   }
 
   .contact__options {

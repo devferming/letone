@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 import { motion, useMotionValue, useSpring } from "motion/react";
 import pricesJson from '../../data/pricesServices.json'
 import './styles/Solutions.css'
-import SolutionsPriceCard from './SolutionsPriceCard';
+import SolutionsCard from './SolutionsCard';
 
 export type SolutionTier = {
   shortTittle: string;
@@ -76,7 +76,6 @@ const Solutions: React.FC = () => {
     <section className='solutions' id='solutions'>
       <h2 className='solutions__h2'>{t('pages.homePage.components.solutions.h2')}</h2>
       <article className='solutions__article'>
-
         <ul className='solutions__article__ul' role='tablist'>
           {Object.entries(list).map(([liName, liInfo]) => (
             <li key={liName} className='solutions__article__ul__li' role='presentation'>
@@ -94,7 +93,7 @@ const Solutions: React.FC = () => {
           ))}
         </ul>
 
-        <SolutionsPriceCard
+        <SolutionsCard
           isFlipped={isFlipped}
           crrLiFront={crrLiFront}
           crrLiBack={crrLiBack}

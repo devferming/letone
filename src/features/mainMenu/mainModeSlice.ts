@@ -5,7 +5,7 @@ interface mainModeState {
 }
 
 const initialState: mainModeState = {
- crrStatus: 'darkMode',
+ crrStatus: 'lightMode',
 }
 
 const mainModeSlice = createSlice({

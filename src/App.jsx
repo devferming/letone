@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
-import MainMenu from './components/shared/MainMenu';
 import HomePage from './pages/HomePage';
+import LegalPages from './pages/LegalPages';
 import ContactForm from './components/shared/ContactForm';
 import { useAppSelector } from './hooks/useAppSelector'
 //import Footer from './components/shared/Footer';
@@ -14,20 +14,18 @@ function App() {
   const crrMode = useAppSelector(state => state.mainMode.crrStatus)
   
 
-  return (
-    <div className={`body ${crrMode === 'darkMode' ? 'body--dark' : 'body--light'} `}>
-      <div className={`contactForm__container ${!isOpen && 'form__close'}`}>
-        <ContactForm />
-      </div>
-      <MainMenu/>
-      <Routes>
-        <Route path='/' element={
-          <HomePage/>
-        }
-        />
-      </Routes>
+return (
+  <div className={`body ${crrMode === 'darkMode' ? 'body--dark' : 'body--light'}`}>
+    <div className={`contactForm__container ${!isOpen && 'form__close'}`}>
+      <ContactForm />
     </div>
-  )
+    <Routes>
+      <Route path='/' element={<HomePage />} />
+      <Route path='/legalPage/:docName' element={<LegalPages />} />
+    </Routes>
+  </div>
+)
+
 }
 
 export default App

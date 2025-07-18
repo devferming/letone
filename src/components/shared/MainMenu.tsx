@@ -18,7 +18,7 @@ const MainMenu: React.FC = () => {
   const littleMenu = useAppSelector(state => state.mainMenu.crrStatus)
   const littleMenuDiv = useRef<HTMLDivElement>(null)
 
-  const handleLanguage = (lang: 'en' | 'es') => {
+  const handleLanguage = (lang: 'en-EN' | 'es-ES') => {
     i18n.changeLanguage(lang.toLowerCase());
   }
 
@@ -27,7 +27,6 @@ const MainMenu: React.FC = () => {
   }
 
   const scrollToSection = (sectionId: string) => {
-    //setLittleMenu('menu')
     littleMenuDiv.current?.classList.remove('showMenu')
     littleMenuDiv.current?.classList.add('hiddenMenu')
     const section = document.getElementById(sectionId);
@@ -95,13 +94,13 @@ const MainMenu: React.FC = () => {
           </div>
           <ul className='mainMenu__control_ul'>
             <li className='mainMenu__control_li'>
-              <button className='mainMenu__control_btn' onClick={() => handleLanguage('en')}>
-                <img className={`mainMenu__control_btn__flag ${crrlang === 'en' ? 'flagActive' : 'flagInactive'}`} src="flagUS.webp" alt="US" />
+              <button className='mainMenu__control_btn' onClick={() => handleLanguage('en-EN')}>
+                <img className={`mainMenu__control_btn__flag ${crrlang === 'en-EN' ? 'flagActive' : 'flagInactive'}`} src="flagUS.webp" alt="US" />
               </button>
             </li>
             <li className='mainMenu__control_li'>
-              <button className='mainMenu__control_btn' onClick={() => handleLanguage('es')}>
-                <img className={`mainMenu__control_btn__flag ${crrlang === 'es' ? 'flagActive' : 'flagInactive'}`} src="flagES.webp" alt="ES" />
+              <button className='mainMenu__control_btn' onClick={() => handleLanguage('es-ES')}>
+                <img className={`mainMenu__control_btn__flag ${crrlang === 'es-ES' ? 'flagActive' : 'flagInactive'}`} src="flagES.webp" alt="ES" />
               </button>
             </li>
 

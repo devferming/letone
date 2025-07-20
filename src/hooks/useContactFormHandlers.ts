@@ -1,7 +1,9 @@
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { closeForm, setStatus } from "../features/contactForm/contactFormSlice";
 import { useSendEmail } from "./useSendEmail";
 import { useAppDispatch } from "./useAppDispatch";
+import { useAppSelector } from "./useAppSelector";
+import ReCAPTCHA from "react-google-recaptcha";
 
 export const useContactFormHandlers = () => {
   const dispatch = useAppDispatch();
@@ -12,54 +14,67 @@ export const useContactFormHandlers = () => {
   const buttonRef = useRef<HTMLButtonElement>(null);
   const iconRef = useRef<HTMLElement>(null);
 
-  const handleSendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+  const [startTime, setStartTime] = useState<number>(Date.now());
+  const isOpen = useAppSelector((state) => state.contactForm.isOpen);
+
+  const recaptchaRef = useRef<ReCAPTCHA>(null);
+  const recaptchaInputRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    if (isOpen) setStartTime(Date.now());
+  }, [isOpen]);
+
+  const handleSendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const form = formRef.current;
     if (!form) return;
 
+    // Honeypot check
     const honeypot = (
-      form.querySelector('[name="subject"]') as HTMLInputElement
+      form.querySelector("input[name='refcode']") as HTMLInputElement
     )?.value;
-    const timestamp = parseInt(
-      (form.querySelector('[name="timestamp"]') as HTMLInputElement)?.value ||
-        "0"
-    );
-    if (honeypot || Date.now() - timestamp < 3000) return;
+    if (honeypot) {
+      console.warn("Bloqueado por honeypot");
+      return;
+    }
+
+    // Tiempo mínimo
+    const elapsed = Date.now() - startTime;
+    if (elapsed < 10000) {
+      console.warn("Formulario enviado demasiado rápido");
+      return;
+    }
 
     feedbackRef.current?.classList.remove("formStatusOff");
     feedbackRef.current?.classList.add("formStatusOn");
     buttonRef.current?.setAttribute("disabled", "true");
 
-    // Ejecutar reCAPTCHA invisible manualmente
-    if (window.grecaptcha) {
-      window.grecaptcha
-        .execute(import.meta.env.VITE_RECAPTCHA_SITE_KEY, { action: "submit" })
-        .then((token: string) => {
-          // Insertar el token en el input oculto
-          const recaptchaInput = form.querySelector<HTMLInputElement>(
-            'input[name="g-recaptcha-response"]'
-          );
-          if (recaptchaInput) recaptchaInput.value = token;
+    // reCaptcha
+    const token = await recaptchaRef.current?.executeAsync();
+    recaptchaRef.current?.reset();
 
-          // Enviar el formulario con EmailJS
-          sendEmail(
-            form,
-            () => {
-              iconRef.current?.classList.remove("bx-mail-send", "bx-flashing");
-              iconRef.current?.classList.add("bx-check");
-              form.reset();
-            },
-            () => {
-              iconRef.current?.classList.remove("bx-mail-send", "bx-flashing");
-              iconRef.current?.classList.add("bx-error-circle");
-              buttonRef.current?.removeAttribute("disabled");
-            }
-          );
-        });
-    } else {
-      console.error("reCAPTCHA no está disponible.");
-      buttonRef.current?.removeAttribute("disabled");
+    if (!token) {
+      console.log("error recaptcha");
+      return;
     }
+
+    if (recaptchaInputRef.current) {
+      recaptchaInputRef.current.value = token;
+    }
+
+    sendEmail(
+      form,
+      () => {
+        iconRef.current?.classList.remove("bx-mail-send", "bx-flashing");
+        iconRef.current?.classList.add("bx-check");
+        form.reset();
+      },
+      () => {
+        iconRef.current?.classList.remove("bx-mail-send", "bx-flashing");
+        iconRef.current?.classList.add("bx-error-circle");
+        buttonRef.current?.removeAttribute("disabled");
+      }
+    );
   };
 
   const handleCloseForm = () => {
@@ -70,6 +85,8 @@ export const useContactFormHandlers = () => {
     buttonRef.current?.removeAttribute("disabled");
     iconRef.current?.classList.remove("bx-check", "bx-error-circle");
     iconRef.current?.classList.add("bx-mail-send", "bx-flashing");
+    formRef.current?.reset();
+    setStartTime(Date.now());
   };
 
   return {
@@ -77,6 +94,8 @@ export const useContactFormHandlers = () => {
     feedbackRef,
     buttonRef,
     iconRef,
+    recaptchaRef,
+    recaptchaInputRef,
     handleSendEmail,
     handleCloseForm,
   };

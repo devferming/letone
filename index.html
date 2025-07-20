@@ -48,16 +48,17 @@
     <script src="https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js"></script>
     <script src="https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js"></script>
 
-    <!-- reCAPTCHA v2 -->
-    <script
-      src="https://www.google.com/recaptcha/api.js?render=explicit"
-      async
-      defer
-    ></script>
+    <!-- reCAPTCHA v2 invisible-->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </head>
 
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script>
+      window.onRecaptchaLoadCallback = function () {
+        window.recaptchaReady = true;
+      };
+    </script>
   </body>
 </html>

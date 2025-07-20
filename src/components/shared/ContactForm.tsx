@@ -1,8 +1,9 @@
+import { useRef } from "react";
 import { useAppSelector } from "../../hooks/useAppSelector";
 import { useTranslation } from "react-i18next";
 import { useContactFormHandlers } from "../../hooks/useContactFormHandlers";
 import contactChannels from "../../data/contactChannels.json";
-
+import ReCAPTCHA from "react-google-recaptcha";
 import "./style/ContactForm.css";
 
 type ServiceKey = keyof typeof contactChannels;
@@ -27,28 +28,14 @@ const ContactForm: React.FC = () => {
     feedbackRef,
     buttonRef,
     iconRef,
+    recaptchaRef,
+    recaptchaInputRef,
     handleSendEmail,
     handleCloseForm,
   } = useContactFormHandlers();
 
   return (
     <form ref={formRef} onSubmit={handleSendEmail} className="contactForm">
-      <input
-        type="text"
-        name="subject"
-        style={{ display: "none" }}
-        tabIndex={-1}
-        autoComplete="off"
-      />
-      <input type="hidden" name="timestamp" value={Date.now()} />
-      <input type="hidden" name="g-recaptcha-response" />
-
-      <div
-        className="g-recaptcha"
-        data-sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
-        data-size="invisible"
-      ></div>
-
       <span
         onClick={handleCloseForm}
         className="contactForm__x material-symbols-outlined"
@@ -79,6 +66,27 @@ const ContactForm: React.FC = () => {
           )}
         </label>
       ))}
+
+      <input
+        type="text"
+        name="refcode"
+        style={{ display: "none" }}
+        tabIndex={-1}
+        autoComplete="off"
+        aria-hidden="true"
+      />
+
+      <input
+        type="hidden"
+        name="g-recaptcha-response"
+        ref={recaptchaInputRef}
+      />
+
+      <ReCAPTCHA
+        ref={recaptchaRef}
+        sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
+        size="invisible"
+      />
 
       <button ref={buttonRef} className="contactForm__btn" type="submit">
         {t("shared.contactForm.button")}

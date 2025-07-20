@@ -13,12 +13,10 @@ export const useContactFormHandlers = () => {
   const feedbackRef = useRef<HTMLSpanElement>(null);
   const buttonRef = useRef<HTMLButtonElement>(null);
   const iconRef = useRef<HTMLElement>(null);
+  const recaptchaRef = useRef<ReCAPTCHA>(null);
 
   const [startTime, setStartTime] = useState<number>(Date.now());
   const isOpen = useAppSelector((state) => state.contactForm.isOpen);
-
-  const recaptchaRef = useRef<ReCAPTCHA>(null);
-  const recaptchaInputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
     if (isOpen) setStartTime(Date.now());
@@ -58,10 +56,6 @@ export const useContactFormHandlers = () => {
       return;
     }
 
-    if (recaptchaInputRef.current) {
-      recaptchaInputRef.current.value = token;
-    }
-
     sendEmail(
       form,
       () => {
@@ -73,7 +67,8 @@ export const useContactFormHandlers = () => {
         iconRef.current?.classList.remove("bx-mail-send", "bx-flashing");
         iconRef.current?.classList.add("bx-error-circle");
         buttonRef.current?.removeAttribute("disabled");
-      }
+      },
+      token 
     );
   };
 
@@ -94,8 +89,7 @@ export const useContactFormHandlers = () => {
     feedbackRef,
     buttonRef,
     iconRef,
-    recaptchaRef,
-    recaptchaInputRef,
+    recaptchaRef, // <-- retorna solo este ref
     handleSendEmail,
     handleCloseForm,
   };

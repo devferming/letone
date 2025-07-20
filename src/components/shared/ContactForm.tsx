@@ -29,7 +29,6 @@ const ContactForm: React.FC = () => {
     buttonRef,
     iconRef,
     recaptchaRef,
-    recaptchaInputRef,
     handleSendEmail,
     handleCloseForm,
   } = useContactFormHandlers();
@@ -74,12 +73,6 @@ const ContactForm: React.FC = () => {
         tabIndex={-1}
         autoComplete="off"
         aria-hidden="true"
-      />
-
-      <input
-        type="hidden"
-        name="g-recaptcha-response"
-        ref={recaptchaInputRef}
       />
 
       <ReCAPTCHA

@@ -112,4 +112,50 @@
 
 @media (max-width:950px) {
 
+  .solutions__article__ul_priceCard {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .solutions__article__ul_priceCard__li {
+    max-width: 100%;
+    flex-direction: row;
+    padding: 0.5em;
+  }
+
+  .solutions__article__ul_priceCard__div {
+    width: 40%
+  }
+
+  .solutions__article__ul_priceCard__a {
+    margin: 1em 0em;
+  }
+
+  .solutions__article__ul_priceCard__p {
+    padding: 0.5em;
+
+  }
+
+}
+
+@media (max-width: 950px) and (orientation: landscape) {
+
+  .solutions__article__ul_priceCard {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .solutions__article__ul_priceCard {
+      width: 100%;
+      padding: 0em 1.5em;
+  }
+
+   .solutions__article__ul_priceCard__div {
+    padding-top: 0.7em;
+  }
+
+    .solutions__article__ul_priceCard__li {
+    max-width: 33%;
+  }
+
 }

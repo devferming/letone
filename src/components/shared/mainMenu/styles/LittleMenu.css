@@ -40,8 +40,8 @@
 
 .littleMenu__btn {
   position: fixed;
-  z-index: 10;
-  width: 100%;
+  right: 2%;
+  width: 15%;
   background-color: transparent;
   display: flex;
   justify-content: end;

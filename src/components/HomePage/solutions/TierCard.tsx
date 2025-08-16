@@ -35,6 +35,7 @@ const TierCard: React.FC<TierProps> = ({
         !isActive ? "hiddenElement" : ""
       }`}
     >
+
       {["Basic", "Pro", "Premium"].map((tier) => (
         <li
           key={tier}
@@ -109,6 +110,7 @@ const TierCard: React.FC<TierProps> = ({
           </p>
         </li>
       ))}
+
     </ul>
   );
 };

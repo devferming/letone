@@ -85,7 +85,7 @@ const Solutions: React.FC = () => {
                         }
                       )}
                     >
-                      {liInfo.longTittle}
+                      {!isActive ? liInfo.longTittle : liInfo.shortTittle}
                     </span>
 
                     <p

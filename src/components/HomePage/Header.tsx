@@ -1,33 +1,29 @@
-import { useTranslation } from "react-i18next"
-import { AnimatePresence, motion } from "motion/react"
-import { useAppDispatch } from "../../hooks/useAppDispatch"
-import { openForm } from "../../features/contactForm/contactFormSlice"
-import { useFlashingElements } from "../../hooks/useFlashingElements"
-import "./styles/Header.css"
+import { useTranslation } from "react-i18next";
+import { AnimatePresence, motion } from "motion/react";
+import { useAppDispatch } from "../../hooks/useAppDispatch";
+import { openForm } from "../../features/contactForm/contactFormSlice";
+import { useFlashingElements } from "../../hooks/useFlashingElements";
+import "./styles/Header.css";
 
 const Header: React.FC = () => {
-  const dispatch = useAppDispatch()
-  const { t } = useTranslation()
+  const dispatch = useAppDispatch();
+  const { t } = useTranslation();
 
   const phrases = t("pages.homePage.components.header.rotatingPhrases", {
     returnObjects: true,
-  })
+  });
 
-  const isArray = Array.isArray(phrases)
+  const isArray = Array.isArray(phrases);
 
   const { currentElement: currentPhrase, crrIdxElement: currentIndex } =
-    useFlashingElements(4000, isArray ? (phrases as string[]) : [])
+    useFlashingElements(4000, isArray ? (phrases as string[]) : []);
 
   return (
     <header className="header" id="header">
       <div className="header__div">
         <h1 className="header__h1">
-          <span className="header__h1--span1">
-            {t("pages.homePage.components.header.brand.let")}
-          </span>
-          <span className="header__h1--span2">
-            {t("pages.homePage.components.header.brand.one")}
-          </span>
+          <span className="header__h1--span1">let</span>
+          <span className="header__h1--span2">One</span>
         </h1>
         <h2 className="header__h2">
           {t("pages.homePage.components.header.tagline")}
@@ -37,7 +33,7 @@ const Header: React.FC = () => {
             type="button"
             aria-label={t("pages.homePage.components.header.contact_aria")}
             onClick={() => dispatch(openForm())}
-            className="header__button header__button--firts"
+            className="header__button"
           >
             {t("pages.homePage.components.header.contact")}
           </button>
@@ -59,7 +55,7 @@ const Header: React.FC = () => {
         </AnimatePresence>
       </div>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

@@ -1,5 +1,4 @@
 import { useAppDispatch } from "./useAppDispatch";
-import emailjs from "@emailjs/browser";
 import { setStatus } from "../features/contactForm/contactFormSlice";
 
 export const useSendEmail = () => {

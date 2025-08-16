@@ -1,0 +1,28 @@
+.solutions__article__ul__li__promo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: var(--bgOpposite);
+  border-radius: 20px 0px 20px 0px;
+  width: 7em;
+  height: 1.8em;
+}
+
+.solutions__article__ul__li__promo__animationContainer {
+  position: absolute;
+  top: -40%;
+  left: 2%;
+  width: 1.5em;
+  height: auto;
+  margin: 0 0.5em 0 0;
+}
+
+.solutions__article__ul__li__promo__h4 {
+  padding-left: 2.3em;
+  color: var(--textOpposite);
+  font-size: 0.9rem;
+}

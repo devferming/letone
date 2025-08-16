@@ -1,12 +1,12 @@
 {
   "whatsApp": {
     "ico": "bx bxl-whatsapp",
-    "href": "https://wa.me/+573145872733"
+    "href": "https://wa.me/573205954240"
   },
   "email": { "ico": "bx bxl-gmail", "href": "#" },
-  "call": { "ico": "bx bx-phone", "href": "tel:+573145872733" },
+  "call": { "ico": "bx bx-phone", "href": "tel:+573205954240" },
   "linkedIn": {
     "ico": "bx bxl-linkedin",
-    "href": "https://www.linkedin.com/in/devferming/"
+    "href": "https://www.linkedin.com/company/letone-dev"
   }
 }

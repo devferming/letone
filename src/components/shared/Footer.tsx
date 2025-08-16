@@ -1,9 +1,15 @@
 import { useTranslation } from "react-i18next";
+import contactChannels from "../../data/contactChannels.json";
 import "./style/Footer.css";
+
+type ServiceKey = keyof typeof contactChannels;
+type ChannelItem = (typeof contactChannels)[ServiceKey];
 
 const Footer: React.FC = () => {
   const { t } = useTranslation();
   const tBase = "shared.footer";
+  const typedChannel = contactChannels["whatsApp"] as ChannelItem;
+
 
   const legalDocs: Array<"privacyPolicy" | "cookiesPolicy" | "termsOfUse"> = [
     "privacyPolicy",
@@ -59,7 +65,7 @@ const Footer: React.FC = () => {
           <p className="footer__firstBlock__contact__p">contacto@letone.com</p>
 
           <a
-            href={t(`${tBase}.contact.a.href`)}
+            href={typedChannel.href+t(`${tBase}.contact.a.href`)}
             className="footer__firstBlock__contact__div"
             aria-label={t(`${tBase}.contact.a.ariaLabel`)}
             target="_blank"
@@ -67,7 +73,7 @@ const Footer: React.FC = () => {
           >
             <i className="bx bxl-whatsapp footer__firstBlock__contact__div__ico"></i>
             <p className="footer__firstBlock__contact__div__p">
-              +57 314 587 27 33
+              +57 320 595 42 40
             </p>
             <p className="footer__firstBlock__contact__div__p">
               {t(`${tBase}.contact.p`)}
@@ -81,7 +87,7 @@ const Footer: React.FC = () => {
           &copy; {new Date().getFullYear()} {t(`${tBase}.legal.year`)}
         </p>
 
-        <nav aria-label={t(`${tBase}.legal.ariaLabel`)}>
+        <nav aria-label={t(`${tBase}.legal.ariaLabel`)} className="footer__secondBlock__nav">
           <ul className="footer__secondBlock__policiesContainer">
             {legalDocs.map((docName) => (
               <li

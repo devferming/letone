@@ -3,10 +3,6 @@
     "homePage": {
       "components": {
         "header": {
-          "brand": {
-            "let": "let",
-            "one": "One"
-          },
           "tagline": "Redefiniendo Límites",
           "contact": "Contáctanos",
           "contact_aria": "Abrir formulario de contacto",
@@ -17,7 +13,8 @@
           ]
         },
         "philosophy": {
-          "h2": "Somos el Anti Template",
+          "h2": "Filosofía",
+          "h3": "Somos el Anti Template",
           "description": "Nada en letOne es por defecto. Cada proyecto es una obra original, construida desde la intención",
           "iconPhrases": {
             "lightbulb_2": "Inspiración",
@@ -32,7 +29,7 @@
           "ul": {
             "landingPages": {
               "shortTittle": "Landing Pages",
-              "longTittle": "Landing Pages de Alto Impacto",
+              "longTittle": "Landing Pages de Alto Impácto",
               "generalDescription": "Diseñadas estratégicamente para convertir visitantes en clientes. Ideales para campañas publicitarias, lanzamientos de productos o generación de leads, con llamados a la acción claros y una experiencia enfocada en la conversión.",
               "basic": "Página optimizada con estructura de conversión, CTA directo, diseño responsivo.",
               "pro": "Diseño personalizado, animaciones ligeras, analítica integrada, estructura SEO lista para indexación.",
@@ -109,12 +106,37 @@
               "basic": "Backend personalizado para editar texto, imágenes y secciones clave.",
               "pro": "Panel robusto con múltiples roles, historial de ediciones, estructura modular.",
               "premium": "Autonomía completa sobre el contenido, configuración de SEO, seguridad reforzada, mantenimiento incluido."
+            },
+            "ecommerce": {
+              "shortTittle": "E-commerce",
+              "longTittle": "Tiendas Online Profesionales",
+              "generalDescription": "Desarrollamos tiendas virtuales rápidas, seguras y listas para vender. Gestión de productos, pagos, usuarios y más. Todo lo que necesitas para operar sin límites.",
+              "basic": "Catálogo de productos, carrito básico, integración con pasarela de pagos local.",
+              "pro": "Panel de gestión completo, múltiples métodos de pago, cupones y manejo de stock.",
+              "premium": "Arquitectura escalable, integración con ERPs, analítica avanzada, optimización para ventas."
+            },
+            "events": {
+              "shortTittle": "Eventos",
+              "longTittle": "Sitios para Eventos y Conferencias",
+              "generalDescription": "Soluciones ideales para gestionar y promocionar eventos, agendas, ponentes, inscripciones y más. Claridad en la información, diseño atractivo y facilidad de navegación.",
+              "basic": "Landing de evento, agenda simple, formulario de inscripción.",
+              "pro": "Gestión de ponentes, múltiples tracks, recordatorios y notificaciones.",
+              "premium": "Streaming integrado, panel de asistencia, QR de registro y conexión con CRMs."
             }
           },
           "imagesAlt": {
             "solutionsImg001": "Ilustracion de un humanoide"
           },
-          "button": "Elegir"
+          "price prefix": "Desde",
+          "a": {
+            "href": {
+              "basic": "?text=Hola%20me%20interesa%20el%20plan%20b%C3%A1sico%20del%20servicio%20",
+              "pro": "?text=Hola%20me%20interesa%20el%20plan%20pro%20del%20servicio%20",
+              "premium": "?text=Hola%20me%20interesa%20el%20plan%20premium%20del%20servicio%20"
+            },
+            "text": "Elegir",
+            "ariaLabel": "Enlace para solicitar via whatsapp, más informacion sobre el plan"
+          }
         },
         "projects": {
           "h2": "Proyectos",
@@ -152,34 +174,33 @@
           "navigateBtnRight": "Ver proyecto siguiente",
           "navigateBtnLeft": "Ver proyecto anterior",
           "readMoreBtnText": {
-            "read" : "Leer menos",
+            "read": "Leer menos",
             "noRead": "Leer más"
           }
         },
         "reviews": {
-          "review1": {
-            "imgSrc": "/reviews_img1.webp",
-            "name": "Alicia Castro",
-            "position": "Rectora Centro Pedagógico La Inmaculada",
-            "comment": "Fermin es un profesional altamente comprometido y capacitado. Gracias al sistema web escolar que desarrolló para nosotros, logramos automatizar una gran parte de nuestros procesos administrativos, y reducir las cargas laborales de todo nuestro personal."
-          },
-          "review2": {
-            "imgSrc": "/reviews_img2.webp",
-            "name": "Lemis Camargo",
-            "position": "Coordinador de Simulacros ICFES",
-            "comment": "Fermín desarrolló un sistema que superó mi idea original. No solo permite realizar las pruebas en línea, sino también generar reportes con todas las estadísticas necesarias para analizar y optimizar el desempeño tanto de los estudiantes como de los docentes."
-          },
-          "review3": {
-            "imgSrc": "/reviews_img3.webp",
-            "name": "Luiggi Parra",
-            "position": "CEO AlumiWork",
-            "comment": "Fermín nos proporcionó un catálogo que recibe al cliente potencial y le brinda toda la información necesaria para realizar su compra. Gracias a esta herramienta, estamos captando de manera más efectiva la atención de nuestros clientes."
-          },
-          "review4": {
-            "imgSrc": "/reviews_img4.webp",
-            "name": "Andréa Jímenez",
-            "position": "Desarrollador Fullstack",
-            "comment": "Fermín posee unas habilidades de liderazgo y empatía que transmite seguridad al resto del equipo, es un excelente desarrollador que siemprte está dispuesto a colaborar y ayudar."
+          "h2": "Reseñas",
+          "testimonials": {
+            "review1": {
+              "name": "Alicia Castro",
+              "position": "Rectora Centro Pedagógico La Inmaculada",
+              "comment": "LetOne es una empresa altamente comprometida y capacitada. Gracias al sistema web escolar que desarrollaron para nosotros, logramos automatizar gran parte de nuestros procesos administrativos y reducir significativamente las cargas laborales de todo nuestro personal."
+            },
+            "review2": {
+              "name": "Lemis Camargo",
+              "position": "Coordinador de Simulacros ICFES",
+              "comment": "El equipo de LetOne desarrolló un sistema que superó mi idea original. No solo permite realizar las pruebas en línea, sino también generar reportes con todas las estadísticas necesarias para analizar y optimizar el desempeño de estudiantes y docentes."
+            },
+            "review3": {
+              "name": "Luiggi Parra",
+              "position": "CEO AlumiWork",
+              "comment": "LetOne nos proporcionó un catálogo digital que recibe al cliente potencial y le brinda toda la información necesaria para realizar su compra. Gracias a esta herramienta, ahora captamos de manera más efectiva la atención de nuestros clientes."
+            },
+            "review4": {
+              "name": "Harold Cervantes",
+              "position": "Director Fundación Juntos en Cada Paso",
+              "comment": "La plataforma que LetOne desarrolló para nuestra fundación ha sido un cambio radical. Ahora podemos gestionar nuestras donaciones de forma segura y transparente, y hemos visto un aumento significativo en el apoyo a nuestra causa gracias a su diseño intuitivo y funcional."
+            }
           }
         },
         "contact": {
@@ -336,9 +357,8 @@
         "header": "Inicio",
         "philosophy": "Filosofía",
         "solutions": "Soluciones",
-        "projects": "Proyectos",
         "reviews": "Reseñas",
-        "contact": "Contáctame"
+        "contact": "Contácto"
       }
     },
     "footer": {
@@ -356,7 +376,7 @@
         "h3": "¿Hablamos?",
         "p": "Escribenos por Whatsapp",
         "a": {
-          "href": "https://wa.me/573145872733?text=Buenos%20d%C3%ADas%2C%20estoy%20interesado(a)%20en%20obtener%20m%C3%A1s%20detalles%20sobre%20los%20servicios%20que%20ofrecen.%20Agradezco%20su%20atenci%C3%B3n.",
+          "href": "?text=Buenos%20d%C3%ADas%2C%20estoy%20interesado(a)%20en%20obtener%20m%C3%A1s%20detalles%20sobre%20los%20servicios%20que%20ofrecen.%20Agradezco%20su%20atenci%C3%B3n.",
           "ariaLabel": "Contactar vía WhatsApp"
         }
       },

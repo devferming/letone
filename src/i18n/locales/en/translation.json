@@ -3,10 +3,6 @@
     "homePage": {
       "components": {
         "header": {
-          "brand": {
-            "let": "let",
-            "one": "One"
-          },
           "tagline": "Redefining Limits",
           "contact": "Contact us",
           "contact_aria": "Open contact form",
@@ -17,7 +13,8 @@
           ]
         },
         "philosophy": {
-          "h2": "We are the Anti Template",
+          "h2": "Philosophy",
+          "h3": "We are the Anti Template",
           "description": "Nothing at letOne is by default. Each project is an original work, built from intention.",
           "iconPhrases": {
             "lightbulb_2": "Inspiration",
@@ -109,12 +106,37 @@
               "basic": "Custom backend to edit text, images, and key sections.",
               "pro": "Robust panel with multiple roles, edit history, modular structure.",
               "premium": "Full content autonomy, SEO configuration, enhanced security, maintenance included."
+            },
+            "ecommerce": {
+              "shortTittle": "E-commerce",
+              "longTittle": "Professional Online Stores",
+              "generalDescription": "We develop fast, secure, and sales-ready online stores. Product management, payments, users, and more. Everything you need to operate without limits.",
+              "basic": "Product catalog, basic shopping cart, integration with local payment gateway.",
+              "pro": "Full management panel, multiple payment methods, coupons, and stock control.",
+              "premium": "Scalable architecture, ERP integration, advanced analytics, and sales optimization."
+            },
+            "events": {
+              "shortTittle": "Events",
+              "longTittle": "Event & Conference Websites",
+              "generalDescription": "Ideal solutions to manage and promote events, schedules, speakers, registrations, and more. Clear information, attractive design, and easy navigation.",
+              "basic": "Event landing page, simple schedule, registration form.",
+              "pro": "Speaker management, multiple tracks, reminders and notifications.",
+              "premium": "Integrated streaming, attendance panel, QR check-in, and CRM integration."
             }
           },
           "imagesAlt": {
             "solutionsImg001": "Illustration of a humanoid"
           },
-          "button": "Choose"
+          "price prefix": "From",
+          "a": {
+            "href": {
+              "basic": "?text=Hi%20I'm%20interested%20in%20the%20basic%20service%20plan%20",
+              "pro": "?text=Hi%20I'm%20interested%20in%20the%20pro%20service%20plan%20",
+              "premium": "?text=Hi%20I'm%20interested%20in%20the%20premium%20service%20plan%20"
+            },
+            "text": "Choose",
+            "ariaLabel": "Link to request more information about the plan via WhatsApp"
+          }
         },
         "projects": {
           "h2": "Projects",
@@ -149,34 +171,33 @@
           "navigateBtnRight": "See next project",
           "navigateBtnLeft": "See previous project",
           "readMoreBtnText": {
-            "read" : "Read less",
+            "read": "Read less",
             "noRead": "Read more"
           }
         },
         "reviews": {
-          "review1": {
-            "imgSrc": "/reviews_img1.webp",
-            "name": "Alicia Castro",
-            "position": "Rector of La Inmaculada Pedagogical Center",
-            "comment": "Fermin is a highly committed and trained professional. Thanks to the school web system he developed for us, we managed to automate a large part of our administrative processes, and reduce the workload of all our staff."
-          },
-          "review2": {
-            "imgSrc": "/reviews_img2.webp",
-            "name": "Lemis Camargo",
-            "position": "Pre ICFES testing coordinator",
-            "comment": "Fermín developed a system that surpassed my original idea. It not only allows you to take online tests, but also generate reports with all the necessary statistics to analyze and optimize the performance of both students and teachers."
-          },
-          "review3": {
-            "imgSrc": "/reviews_img3.webp",
-            "name": "Luiggi Parra",
-            "position": "CEO AlumiWork",
-            "comment": "Fermín gave us a catalog that receives the potential client, and gives them all the information necessary to purchase, thanks to this tool we are better capturing the attention of clients"
-          },
-          "review4": {
-            "imgSrc": "/reviews_img4.webp",
-            "name": "Andréa Jímenez",
-            "position": "Fullstack Developer",
-            "comment": "Fermín has leadership and empathy skills that transmit security to the rest of the team, he is an excellent developer who is always willing to collaborate and help."
+          "h2": "Reviews",
+          "testimonials": {
+            "review1": {
+              "name": "Alicia Castro",
+              "position": "Inmaculada Pedagogical Center Rector",
+              "comment": "LetOne is a highly committed and skilled company. Thanks to the school web system they developed for us, we managed to automate a large part of our administrative processes and significantly reduce the workload of all our staff."
+            },
+            "review2": {
+              "name": "Lemis Camargo",
+              "position": "Pre ICFES testing coordinator",
+              "comment": "The LetOne team developed a system that exceeded my original idea. It not only allows us to conduct exams online but also generates reports with all the necessary statistics to analyze and optimize the performance of both students and teachers."
+            },
+            "review3": {
+              "name": "Luiggi Parra",
+              "position": "AlumiWork CEO",
+              "comment": "LetOne provided us with a digital catalog that welcomes potential clients and gives them all the information they need to make a purchase. Thanks to this tool, we are now capturing our clients’ attention more effectively."
+            },
+            "review4": {
+              "name": "Harold Cervantes",
+              "position": "Juntos en Cada Paso Foundation Director",
+              "comment": "The platform LetOne developed for our foundation has been a complete game changer. We can now manage our donations securely and transparently, and we have seen a significant increase in support for our cause thanks to its intuitive and functional design."
+            }
           }
         },
         "contact": {
@@ -331,7 +352,6 @@
         "header": "Home",
         "philosophy": "Philosophy",
         "solutions": "Solutions",
-        "projects": "Projects",
         "reviews": "Reviews",
         "contact": "Contact"
       }
@@ -351,7 +371,7 @@
         "h3": "Shall we talk?",
         "p": "Write to us on WhatsApp",
         "a": {
-          "href": "https://wa.me/573145872733?text=Good%20morning%2C%20I%E2%80%99m%20interested%20in%20getting%20more%20information%20about%20the%20services%20you%20offer.%20I%20appreciate%20your%20attention.",
+          "href": "?text=Good%20morning%2C%20I%E2%80%99m%20interested%20in%20getting%20more%20information%20about%20the%20services%20you%20offer.%20I%20appreciate%20your%20attention.",
           "ariaLabel": "Contact via WhatsApp"
         }
       },

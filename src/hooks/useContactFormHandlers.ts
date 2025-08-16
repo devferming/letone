@@ -89,7 +89,7 @@ export const useContactFormHandlers = () => {
     feedbackRef,
     buttonRef,
     iconRef,
-    recaptchaRef, // <-- retorna solo este ref
+    recaptchaRef,
     handleSendEmail,
     handleCloseForm,
   };

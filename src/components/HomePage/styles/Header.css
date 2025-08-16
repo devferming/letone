@@ -6,7 +6,6 @@
   justify-content: center;
   align-items: center;
   gap: 1em;
-  background-color: var(--bg);
 }
 
 .header__div {
@@ -47,32 +46,13 @@
 }
 
 .header__button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 9em;
-  height: 3em;
+  border: none;
+  padding: 0.8em 1.5em;
   border-radius: 20px;
-  background-color: var(--bg);
-  color: var(--text);
-  font-size: 1rem;
   font-weight: var(--textBold);
-  padding: 0 0.5em;
-  transition:
-    background-color 0.4s,
-    transform 0.2s,
-    font-weight 0.3s;
-}
-
-.header__button--firts {
-  border: solid 2px var(--bgOpposite);
-  animation: animateBorder 0.7s infinite alternate ease-in-out;
-}
-
-.header__button:hover {
-  background-color: var(--bgOpposite);
-  color: var(--textOpposite);
-  transform: scale(1.05);
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 0 10px var(--accentButton);
 }
 
 .header__msg__container {
@@ -80,7 +60,7 @@
   display: flex;
   align-items: center;
   height: 5rem;
-  width: 100%; 
+  width: 100%;
   overflow: hidden;
 }
 
@@ -119,9 +99,19 @@
   .header__msg__container {
     width: 80%;
   }
-  
+
   .header__msg {
     font-size: 1.3rem !important;
   }
 
+}
+
+@media (max-width: 950px) and (orientation: landscape) {
+  .header__div {
+    margin-bottom: 0em;
+  }
+
+  .header__msg__container {
+    height: 3rem;
+  }
 }

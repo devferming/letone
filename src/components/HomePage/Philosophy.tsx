@@ -29,7 +29,7 @@ const Philosophy: React.FC = () => {
     "-40%",
     "x"
   );
-  
+
   const initialRocketAnimation = { opacity: 0, y: 0, scale: 0.95 };
   const initialFallbackAnimation = { opacity: 0, x: 10, scale: 0.98 };
 
@@ -55,10 +55,15 @@ const Philosophy: React.FC = () => {
 
   return (
     <section className="philosophy" id="philosophy" ref={sectionPhilosophyRef}>
+
+      <h2 className="philosophy__h2">
+        {t("pages.homePage.components.philosophy.h2")}
+      </h2>
+
       <div className="philosophy__texts">
-        <h2 className="philosophy__h2">
-          {t("pages.homePage.components.philosophy.h2")}
-        </h2>
+        <h3 className="philosophy__h3">
+          {t("pages.homePage.components.philosophy.h3")}
+        </h3>
         <p className="philosophy__p">
           {t("pages.homePage.components.philosophy.description")}
         </p>
@@ -117,7 +122,7 @@ const Philosophy: React.FC = () => {
 
       <motion.img
         className="philosophy__animation__img"
-        src="/philosophyImg002.png"
+        src="/src/assets/images/philosophy/philosophyImg002.webp"
         alt="PNG image from es.pngtree.com"
         style={motionStyle}
       />

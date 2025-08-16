@@ -2,10 +2,12 @@ import { useTranslation } from "react-i18next";
 import { useAppDispatch } from "../../hooks/useAppDispatch";
 import { openForm } from "../../features/contactForm/contactFormSlice";
 import contactChannels from "../../data/contactChannels.json";
+import {
+  ServiceKey,
+  ChannelItem,
+} from "../../types/Contact.types";
+import clsx from "clsx";
 import "./styles/Contact.css";
-
-type ServiceKey = keyof typeof contactChannels;
-type ChannelItem = (typeof contactChannels)[ServiceKey];
 
 const Contact: React.FC = () => {
   const { t } = useTranslation();
@@ -16,8 +18,6 @@ const Contact: React.FC = () => {
     <section className="contact" id="contact">
       <h2
         className="contact__h2"
-        data-translate-en="Contact Me"
-        data-translate-es="Contáctame"
       >
         {t(`${tBase}.h2`)}
       </h2>
@@ -31,7 +31,9 @@ const Contact: React.FC = () => {
           return (
             <a
               key={typedKey}
-              className="contact__option"
+              className={clsx("contact__option", {
+                "contactOptionWhatsapp": typedKey === "whatsApp",
+              })}
               {...(typedKey === "email"
                 ? { onClick: () => dispatch(openForm()) } 
                 : {

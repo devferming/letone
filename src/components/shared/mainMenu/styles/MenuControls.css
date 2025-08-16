@@ -1,0 +1,58 @@
+.mainMenu__control_ul {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  padding: 0 0.5em;
+}
+
+.mainMenu__control_btn {
+  background-color: transparent;
+}
+
+.mainMenu__control_btn__flag {
+  width: 1.7em;
+  transition: transform 0.1s ease-in, opacity 0.2s ease-in;
+}
+
+.flagActive {
+  opacity: 0.2;
+  transform: scale(0.8);
+  cursor: not-allowed;
+}
+
+.flagInactive {
+  transform: scale(0.97);
+}
+
+.mainMenu__control_btn__flag:hover {
+  transform: scale(0.8);
+}
+
+.mainMenu__control_mode__btn {
+  width: 3.5em;
+  height: 2em;
+  background-color: var(--bgOpposite);
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.15em;
+  transition: background-color 0.5s ease;
+}
+
+.mainMenu__control_mode__btn__circle {
+  width: 1.7em;
+  height: 1.7em;
+  background-color: var(--bgMain);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.5s ease;
+}
+
+.mainMenu__control_mode__btn__ico {
+  color: var(--textLogoLet);
+  font-size: 1.3rem;
+}

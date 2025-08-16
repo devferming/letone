@@ -57,7 +57,7 @@
 }
 
 .footer__firstBlock__contact__div {
-    background-color: #25C547;
+    background-color: var(--textLogoLet);
     padding: 0.5em 1em;
     border-radius: 10px;
     margin-top: 0.5em;
@@ -154,6 +154,8 @@
 
     .footer__secondBlock__p {
         width: 100%;
+        text-align: center;
+        margin-bottom: 1em;
     }
 
     .footer__secondBlock__policiesContainer {
@@ -161,6 +163,15 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+        row-gap: 0.3em;
+    }
+
+}
+
+@media (max-width: 950px) and (orientation: landscape) {
+
+    .footer__secondBlock {
+        min-height: 20vh;
     }
 
 }

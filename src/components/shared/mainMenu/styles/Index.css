@@ -1,0 +1,60 @@
+.mainMenu {
+  height: 3em;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0em 2em;
+  position: fixed;
+  z-index: 99;
+  background-color: var(--bgMain);
+}
+
+.mainMenu__logo_container {
+  display: flex;
+  align-items: center;
+}
+
+.mainMenu__logo {
+  font-size: 1.2rem;
+}
+
+.mainMenu__logo--span1 {
+  color: var(--textLogoLet)
+}
+
+.mainMenu__logo--span2 {
+  color: var(--textLogoOne)
+}
+
+.mainMenu__ul {
+  width: 50%;
+  display: flex;
+  gap: 0em;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 0.5em;
+}
+
+.mainMenu__btn {
+  background-color: transparent;
+  color: var(--text);
+  transition: filter 0.38s ease;
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: var(--textMedium);
+  height: 100%;
+  padding: 0 0.9em;
+}
+
+.mainMenu__btn:hover {
+  filter: opacity(0.5);
+}
+
+/*********** Media Query ***********/
+
+@media (max-width:950px) {
+  .mainMenu {
+    transform: scale(0);
+  }
+}

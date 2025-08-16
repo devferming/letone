@@ -1,38 +1,35 @@
-import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { AnimatePresence, motion } from "motion/react";
 import { useFlashingElements } from "../../hooks/useFlashingElements";
+import { Review } from "../../types/Reviews.types";
 import "./styles/Reviews.css";
-
-interface Review {
-  imgSrc: string;
-  name: string;
-  position: string;
-  comment: string;
-}
 
 const Reviews: React.FC = () => {
   const { t } = useTranslation();
+  const tBase = "pages.homePage.components.reviews";
 
-  const reviewsObj = t("pages.homePage.components.reviews", {
+  const reviewsObj = t(`${tBase}.testimonials`, {
     returnObjects: true,
   }) as Record<string, Review>;
 
   const reviewKeys = Object.keys(reviewsObj);
 
-  const { currentElement: currentReviewKey, crrIdxElement: currentIndex } =
+  const { currentElement: currentReviewKey } =
     useFlashingElements<keyof typeof reviewsObj>(4000, reviewKeys);
 
   const review = reviewsObj[currentReviewKey];
+
+  const images = import.meta.glob("/src/assets/images/reviews/*.webp", {
+    eager: true,
+    import: "default",
+  }) as Record<string, string>;
 
   return (
     <section className="reviews" id="reviews">
       <h2
         className="reviews__h2"
-        data-translate-en="Reviews"
-        data-translate-es="Reseñas"
       >
-        Reseñas
+        {t(`${tBase}.h2`)}
       </h2>
 
       <div className="reviews__container">
@@ -69,7 +66,9 @@ const Reviews: React.FC = () => {
             <div className="reviews__container__card__person">
               <img
                 className="reviews__container__card__person__img"
-                src={review.imgSrc}
+                src={
+                  images[`/src/assets/images/reviews/${currentReviewKey}.webp`]
+                }
                 alt={`Avatar de ${review.name}`}
               />
               <div>

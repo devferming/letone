@@ -1,7 +1,6 @@
 .contact {
   width: 100%;
   padding: 0em 10em 0em 10em;
-  background-color: var(--bg);
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -40,6 +39,16 @@
   justify-content: center;
   transition: transform 0.4s, background-color 0.7s;
   cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contactOptionWhatsapp {
+  background-color: var(--callToActionColor);
+}
+
+.contactOptionWhatsapp span,
+.contactOptionWhatsapp i {
+  color: var(--textOpposite);
 }
 
 .contact__option:hover {
@@ -70,21 +79,35 @@
 @media (max-width:950px) {
 
   .contact {
-    min-height: 100vh;
-    padding: 2.5em 1.5em 2.5em 1.5em;
+    padding: 0em 1.5em;
     height: auto;
-    flex-direction: column;
-    align-items: center;
+    margin-bottom: 3.5em;
   }
 
   .contact__h2 {
     margin-bottom: 0;
+    font-size: 4rem;
+    margin-bottom: 0.5em;
   }
 
   .contact__options {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 1.3em;
+  }
+
+}
+
+@media (max-width: 950px) and (orientation: landscape) {
+
+  .contact {
+    height: 100vh;
+  }
+
+  .contact__h2 {
+    margin-bottom: 0;
+    font-size: 10rem;
+    margin-bottom: -0.7em;
   }
 
 }

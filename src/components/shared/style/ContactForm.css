@@ -54,21 +54,9 @@
   width: 7em;
   height: 2.5em;
   border-radius: 20px;
-  background-color: var(--bgSecondary);
-  color: var(--text);
   font-size: 1rem;
   font-weight: var(--textBold);
   padding: 0  0.5em;
-  transition:
-    background-color 0.4s,
-    transform 0.2s,
-    font-weight 0.3s;
-}
-
-.contactForm__btn:hover {
-  background-color: var(--bgOpposite);
-  color: var(--textOpposite);
-  transform: scale(1.05);
 }
 
 .contactForm__textArea {

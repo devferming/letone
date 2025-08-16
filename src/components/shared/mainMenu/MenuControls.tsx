@@ -3,6 +3,9 @@ import i18n from "i18next";
 import { useAppDispatch } from "../../../hooks/useAppDispatch";
 import { useAppSelector } from '../../../hooks/useAppSelector'
 import { darkMode, lightMode } from "../../../features/mainMenu/mainModeSlice";
+import flagUsImg from "@/assets/images/flagUS.webp";
+import flagEsImg from "@/assets/images/flagES.webp";
+
 import '../mainMenu/styles/MenuControls.css';
 
 const MenuControls: React.FC = () => {
@@ -30,7 +33,7 @@ const MenuControls: React.FC = () => {
             className={`mainMenu__control_btn__flag ${
               crrlang === "en-EN" ? "flagActive" : "flagInactive"
             }`}
-            src="/src/assets/images/flagUS.webp"
+            src={flagUsImg}
             alt="US"
           />
         </button>
@@ -44,7 +47,7 @@ const MenuControls: React.FC = () => {
             className={`mainMenu__control_btn__flag ${
               crrlang === "es-ES" ? "flagActive" : "flagInactive"
             }`}
-            src="/src/assets/images/flagES.webp"
+            src={flagEsImg}
             alt="ES"
           />
         </button>

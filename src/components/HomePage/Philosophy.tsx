@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import { AnimatePresence, motion } from "motion/react";
 import { useScrollParallax } from "../../hooks/useScrollParallaxX";
 import { useFlashingElements } from "../../hooks/useFlashingElements";
+import philosophyImg from "@/assets/images/philosophy/philosophyImg002.webp";
 import "./styles/Philosophy.css";
 
 const Philosophy: React.FC = () => {
@@ -122,7 +123,7 @@ const Philosophy: React.FC = () => {
 
       <motion.img
         className="philosophy__animation__img"
-        src="/src/assets/images/philosophy/philosophyImg002.webp"
+         src={philosophyImg}
         alt="PNG image from es.pngtree.com"
         style={motionStyle}
       />

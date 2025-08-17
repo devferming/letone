@@ -4,28 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="google" content="notranslate" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <title>letOne</title>
+    <link rel="icon" type="image/svg+xml" href="/letOne2.webp" />
+    <title>LetOne | Desarrollo Web Minimalista y Moderno</title>
 
-    <meta name="author" content="Fermín Gutiérrez" />
+    <meta name="author" content="LetOne" />
     <meta
       name="description"
-      content="Soy un Desarrollador Full Stack especializado en la creación de interfaces web con React y el desarrollo de API con Node.js, Mi enfoque no solo se centra en habilidades técnicas, sino también en habilidades blandas destacadas, como una comunicación activa y una receptividad excepcional a los feedbacks. Además, poseo habilidades sólidas en programación, documentación y gestión de proyectos, utilizando herramientas colaborativas como Slack y Notion"
+      content="LetOne es una empresa de desarrollo web especializada en crear sitios minimalistas, modernos y funcionales. Ofrecemos soluciones digitales personalizadas con React, Node.js, Laravel y tecnologías de vanguardia."
     />
     <meta
       name="keywords"
-      content="Full Stack Developer, Desarrollador Full Stack, React, Node.js, Express, SQL, Postgres, Programador con Experiencia, Habilidades Blandas, Comunicación Activa, Receptividad a Feedbacks, Gestión de Proyectos, Documentación, Slack, Notion"
+      content="LetOne, Desarrollo Web, Páginas Web Minimalistas, React, Node.js, Aplicaciones Web, Diseño Moderno, Optimización SEO, Automatización, Integración API"
     />
 
     <!-- Open Graph Protocol (OGP)-->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Fermín Gutiérrez" />
+    <meta property="og:site_name" content="LetOne" />
+    <meta
+      property="og:title"
+      content="LetOne | Desarrollo Web Minimalista y Moderno"
+    />
     <meta
       property="og:description"
-      content="Soy un Desarrollador Full Stack especializado en la creación de interfaces web con React y el desarrollo de API con Node.js, Mi enfoque no solo se centra en habilidades técnicas, sino también en habilidades blandas destacadas, como una comunicación activa y una receptividad excepcional a los feedbacks. Además, poseo habilidades sólidas en programación, documentación y gestión de proyectos, utilizando herramientas colaborativas como Slack y Notion"
+      content="Creamos páginas web modernas y funcionales que se adaptan a tus necesidades. LetOne combina diseño minimalista con tecnología avanzada."
     />
-    <meta property="og:url" content="URL_DE_TU_PORTAFOLIO" />
-    <meta property="og:image" content="URL_DE_LA_IMAGEN" />
+    <meta property="og:url" content="https://letone.dev" />
+    <meta property="og:image" content="https://letone.dev/letOne.webp" />
+    <!-- End Open Graph Protocol (OGP)-->
 
     <!-- Font-family -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -51,9 +56,66 @@
 
     <!-- reCAPTCHA v2 invisible-->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <!-- Código de seguimiento Metricool-->
+    <script>
+      function loadScript(a) {
+        var b = document.getElementsByTagName("head")[0],
+          c = document.createElement("script");
+        (c.type = "text/javascript"),
+          (c.src = "https://tracker.metricool.com/resources/be.js"),
+          (c.onreadystatechange = a),
+          (c.onload = a),
+          b.appendChild(c);
+      }
+      loadScript(function () {
+        beTracker.t({ hash: "80aff386a442c5abc4542c4adf7b7994" });
+      });
+    </script>
+    <!-- End Código de seguimiento Metricool-->
+
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "1138937781619052");
+      fbq("track", "PageView");
+    </script>
+    <!-- End Meta Pixel Code -->
   </head>
 
   <body>
+    <!-- Meta Pixel noscript Code -->
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=1138937781619052&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel noscript Code -->
+
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
     <script>

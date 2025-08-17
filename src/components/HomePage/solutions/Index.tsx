@@ -40,6 +40,7 @@ const Solutions: React.FC = () => {
     <section className="solutions" id="solutions">
       <article className="solutions__article">
         <ul className="solutions__article__ul" role="tablist">
+
           <AnimatePresence mode="sync">
             {(Object.entries(list) as [ServiceKey, SolutionTier][]).map(
               ([liName, liInfo], index) => {
@@ -125,6 +126,7 @@ const Solutions: React.FC = () => {
               }
             )}
           </AnimatePresence>
+          
         </ul>
       </article>
     </section>

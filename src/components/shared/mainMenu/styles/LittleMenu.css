@@ -8,7 +8,7 @@
   height: 100vh;
   width: 100%;
   position: fixed;
-  z-index: 100;
+  z-index: 9;
   background-color: var(--bgMain);
   transition: transform 0.5s ease;
 }

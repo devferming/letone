@@ -65,12 +65,12 @@
 }
 
 .reviews__container__card__person__span {
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 .reviews__container__card__p {
   padding: 0.8em 0.5em;
-  font-size: 0.9rem;
+  font-size: 1rem;
   text-align: right;
   font-weight: var(--textlight);
 }
